@@ -1,0 +1,14 @@
+C:\_VisualStudioProjects\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+C:\_VisualStudioProjects\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+C:\_VisualStudioProjects\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.csprojAssemblyReference.cache
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\MainWindow.g.cs
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\App.g.cs
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku_MarkupCompile.cache
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku_MarkupCompile.lref
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\MainWindow.baml
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.g.resources
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.Properties.Resources.resources
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.GenerateResource.cache
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.pdb

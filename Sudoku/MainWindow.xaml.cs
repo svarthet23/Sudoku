@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Sudoku
 {
@@ -672,6 +661,337 @@ namespace Sudoku
         private void tb81_MouseLeave(object sender, MouseEventArgs e)
         {
             tb81.Background = Brushes.Gray;
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        private void tb1_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb1.Clear();
+        }
+        private void tb2_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb2.Clear();
+        }
+        private void tb3_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb3.Clear();
+        }
+        private void tb4_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb4.Clear();
+        }
+        private void tb5_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb5.Clear();
+        }
+        private void tb6_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb6.Clear();
+        }
+        private void tb7_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb7.Clear();
+        }
+        private void tb8_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb8.Clear();
+        }
+        private void tb9_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb9.Clear();
+        }
+        private void tb10_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb10.Clear();
+        }
+        private void tb11_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb11.Clear();
+        }
+        private void tb12_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb12.Clear();
+        }
+        private void tb13_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb13.Clear();
+        }
+        private void tb14_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb14.Clear();
+        }
+        private void tb15_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb15.Clear();
+        }
+        private void tb16_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb16.Clear();
+        }
+        private void tb17_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb17.Clear();
+        }
+        private void tb18_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb18.Clear();
+        }
+        private void tb19_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb19.Clear();
+        }
+        private void tb20_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb20.Clear();
+        }
+        private void tb21_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb21.Clear();
+        }
+        private void tb22_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb22.Clear();
+        }
+        private void tb23_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb23.Clear();
+        }
+        private void tb24_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb24.Clear();
+        }
+        private void tb25_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb25.Clear();
+        }
+        private void tb26_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb26.Clear();
+        }
+        private void tb27_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb27.Clear();
+        }
+        private void tb28_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb28.Clear();
+        }
+        private void tb29_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb29.Clear();
+        }
+        private void tb30_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb30.Clear();
+        }
+        private void tb31_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb31.Clear();
+        }
+        private void tb32_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb32.Clear();
+        }
+        private void tb33_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb33.Clear();
+        }
+        private void tb34_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb34.Clear();
+        }
+        private void tb35_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb35.Clear();
+        }
+        private void tb36_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb36.Clear();
+        }
+        private void tb37_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb37.Clear();
+        }
+        private void tb38_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb38.Clear();
+        }
+        private void tb39_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb39.Clear();
+        }
+        private void tb40_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb40.Clear();
+        }
+        private void tb41_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb41.Clear();
+        }
+        private void tb42_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb42.Clear();
+        }
+        private void tb43_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb43.Clear();
+        }
+        private void tb44_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb44.Clear();
+        }
+        private void tb45_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb45.Clear();
+        }
+        private void tb46_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb46.Clear();
+        }
+        private void tb47_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb47.Clear();
+        }
+        private void tb48_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb48.Clear();
+        }
+        private void tb49_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb49.Clear();
+        }
+        private void tb50_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb50.Clear();
+        }
+        private void tb51_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb51.Clear();
+        }
+        private void tb52_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb52.Clear();
+        }
+        private void tb53_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb53.Clear();
+        }
+        private void tb54_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb54.Clear();
+        }
+        private void tb55_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb55.Clear();
+        }
+        private void tb56_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb56.Clear();
+        }
+        private void tb57_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb57.Clear();
+        }
+        private void tb58_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb58.Clear();
+        }
+        private void tb59_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb59.Clear();
+        }
+        private void tb60_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb60.Clear();
+        }
+        private void tb61_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb61.Clear();
+        }
+        private void tb62_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb62.Clear();
+        }
+        private void tb63_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb63.Clear();
+        }
+        private void tb64_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb64.Clear();
+        }
+        private void tb65_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb65.Clear();
+        }
+        private void tb66_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb66.Clear();
+        }
+        private void tb67_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb67.Clear();
+        }
+        private void tb68_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb68.Clear();
+        }
+        private void tb69_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb69.Clear();
+        }
+        private void tb70_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb70.Clear();
+        }
+        private void tb71_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb71.Clear();
+        }
+        private void tb72_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb72.Clear();
+        }
+        private void tb73_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb73.Clear();
+        }
+        private void tb74_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb74.Clear();
+        }
+        private void tb75_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb75.Clear();
+        }
+        private void tb76_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb76.Clear();
+        }
+        private void tb77_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb77.Clear();
+        }
+        private void tb78_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb78.Clear();
+        }
+        private void tb79_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb79.Clear();
+        }
+        private void tb80_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb80.Clear();
+        }
+        private void tb81_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tb81.Clear();
         }
     }
 }

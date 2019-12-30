@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sudoku"
         mc:Ignorable="d"
-        Title="Sudoku" Height="800" Width="900" Background="#FF787878">
+        Title="Sudoku" Height="800" Width="900" Background="#FF787878" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="C:\_VisualStudioProjects\Sudoku\Sudoku\img\IconWindow.png">
     <Grid Margin="0,0,122,0">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\_VisualStudioProjects\Sudoku\Sudoku\Background.png"/>
+            <ImageBrush ImageSource="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Background.png"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -32,15 +32,15 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-         <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb1_GotFocus' MouseMove = 'tb1_MouseMove' MouseLeave = 'tb1_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow" />
-         <TextBox x:Name='tb2' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb2_GotFocus' MouseMove = 'tb2_MouseMove' MouseLeave = 'tb2_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb3' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb3_GotFocus' MouseMove = 'tb3_MouseMove' MouseLeave = 'tb3_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb4' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb4_GotFocus' MouseMove = 'tb4_MouseMove' MouseLeave = 'tb4_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="3" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb5' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb5_GotFocus' MouseMove = 'tb5_MouseMove' MouseLeave = 'tb5_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="4" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb6' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb6_GotFocus' MouseMove = 'tb6_MouseMove' MouseLeave = 'tb6_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="5" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb7' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb7_GotFocus' MouseMove = 'tb7_MouseMove' MouseLeave = 'tb7_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="6" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb8' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb8_GotFocus' MouseMove = 'tb8_MouseMove' MouseLeave = 'tb8_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="7" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb9' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb9_GotFocus' MouseMove = 'tb9_MouseMove' MouseLeave = 'tb9_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="8" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb1_GotFocus' MouseMove = 'tb1_MouseMove' MouseLeave = 'tb1_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow" />
+        <TextBox x:Name='tb2' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb2_GotFocus' MouseMove = 'tb2_MouseMove' MouseLeave = 'tb2_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb3' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb3_GotFocus' MouseMove = 'tb3_MouseMove' MouseLeave = 'tb3_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb4' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb4_GotFocus' MouseMove = 'tb4_MouseMove' MouseLeave = 'tb4_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="3" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb5' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb5_GotFocus' MouseMove = 'tb5_MouseMove' MouseLeave = 'tb5_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="4" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb6' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb6_GotFocus' MouseMove = 'tb6_MouseMove' MouseLeave = 'tb6_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="5" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb7' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb7_GotFocus' MouseMove = 'tb7_MouseMove' MouseLeave = 'tb7_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="6" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb8' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb8_GotFocus' MouseMove = 'tb8_MouseMove' MouseLeave = 'tb8_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="7" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb9' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb9_GotFocus' MouseMove = 'tb9_MouseMove' MouseLeave = 'tb9_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="8" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb10' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb10_GotFocus' MouseMove = 'tb10_MouseMove' MouseLeave = 'tb10_MouseLeave' SelectionBrush="{x:Null}" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb11' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb11_GotFocus' MouseMove = 'tb11_MouseMove' MouseLeave = 'tb11_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb12' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb12_GotFocus' MouseMove = 'tb12_MouseMove' MouseLeave = 'tb12_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
@@ -113,246 +113,17 @@
         <TextBox x:Name='tb79' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb79_GotFocus' MouseMove = 'tb79_MouseMove' MouseLeave = 'tb79_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="6" Grid.Row="8" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb80' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb80_GotFocus' MouseMove = 'tb80_MouseMove' MouseLeave = 'tb80_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="7" Grid.Row="8" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb81' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb81_GotFocus' MouseMove = 'tb81_MouseMove' MouseLeave = 'tb81_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="8" Grid.Row="8" Width="82" Height="82" Cursor="Arrow"/>
+        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="252" Margin="96,10,-112,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="102">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="bStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14"/>
+            <Button x:Name="bRestart" Content="Restart" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Background="{x:Null}" Foreground="#FFDEDEDE" Grid.Row="1" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14"/>
+        </Grid>
     </Grid>
 </Window>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

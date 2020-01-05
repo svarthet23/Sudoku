@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -1004,6 +1005,28 @@ namespace Sudoku
             Create create = new Create();
             create.Start();
             bStart.Content = "Restart";
+        }
+
+        private void difficultySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Slider slider = e.OriginalSource as Slider;
+
+            if (slider == null)
+            {
+                difficultyLabel.Content = "Łatwy";
+            }
+            else if (difficultySlider.Value == 0)
+            {
+                difficultyLabel.Content = "Łatwy";
+            }
+            else if (difficultySlider.Value == 2)
+            {
+                difficultyLabel.Content = "Średni";
+            }
+            else if (difficultySlider.Value == 3)
+            {
+                difficultyLabel.Content = "Trudny";
+            }
         }
     }
 }

@@ -123,6 +123,8 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Button x:Name="bStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14" Click="bStart_Click"/>
+            <Slider x:Name="difficultySlider" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Minimum="1" Maximum="3" Width="100" SmallChange="1" IsSnapToTickEnabled="True" TickPlacement="TopLeft" Value="1" ValueChanged="difficultySlider_ValueChanged"/>
+            <Label x:Name="difficultyLabel" Content="difficulty" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFDEDEDE"/>
         </Grid>
     </Grid>
 </Window>

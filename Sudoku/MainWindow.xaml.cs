@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -1027,6 +1028,22 @@ namespace Sudoku
             {
                 difficultyLabel.Content = "Trudny";
             }
+        }
+
+        private void tb1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UInt16.TryParse(tb1.Text, out Variables.fullBoard[0, 0]);
+            UInt16.TryParse(tb1.Text, out Variables.board1[0, 0]);
+            UInt16.TryParse(tb2.Text, out Variables.board1[1, 0]);
+            UInt16.TryParse(tb3.Text, out Variables.board1[2, 0]);
+            UInt16.TryParse(tb10.Text, out Variables.board1[0, 1]);
+            UInt16.TryParse(tb11.Text, out Variables.board1[1, 1]);
+            UInt16.TryParse(tb12.Text, out Variables.board1[2, 1]);
+            UInt16.TryParse(tb19.Text, out Variables.board1[0, 2]);
+            UInt16.TryParse(tb20.Text, out Variables.board1[1, 2]);
+            UInt16.TryParse(tb21.Text, out Variables.board1[2, 2]);            
+            tb4.Text = Variables.fullBoard[0,0].ToString();
+            Algorithm.tb1Check();
         }
     }
 }

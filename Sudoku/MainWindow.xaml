@@ -32,7 +32,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb1_GotFocus' MouseMove = 'tb1_MouseMove' MouseLeave = 'tb1_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow" />
+        <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb1_GotFocus' MouseMove = 'tb1_MouseMove' MouseLeave = 'tb1_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow" TextChanged="tb1_TextChanged" />
         <TextBox x:Name='tb2' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb2_GotFocus' MouseMove = 'tb2_MouseMove' MouseLeave = 'tb2_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb3' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb3_GotFocus' MouseMove = 'tb3_MouseMove' MouseLeave = 'tb3_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb4' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" GotFocus = 'tb4_GotFocus' MouseMove = 'tb4_MouseMove' MouseLeave = 'tb4_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="3" Width="82" Height="82" Cursor="Arrow"/>
@@ -125,6 +125,32 @@
             <Button x:Name="bStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14" Click="bStart_Click"/>
             <Slider x:Name="difficultySlider" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Minimum="1" Maximum="3" Width="100" SmallChange="1" IsSnapToTickEnabled="True" TickPlacement="TopLeft" Value="1" ValueChanged="difficultySlider_ValueChanged"/>
             <Label x:Name="difficultyLabel" Content="difficulty" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFDEDEDE"/>
+        </Grid>
+        
+        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,57,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
+            <Grid.Background>
+                <ImageBrush ImageSource="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Background.png"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            <Image Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Source="C:\_VisualStudioProjects\Sudoku\Sudoku\img\Wrong.png"/>
+            
         </Grid>
     </Grid>
 </Window>

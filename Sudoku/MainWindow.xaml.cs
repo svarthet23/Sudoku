@@ -675,568 +675,568 @@ namespace Sudoku
         private void tb1_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb1.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb1.Clear();
         }
         private void tb2_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb2.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb2.Clear();
         }
         private void tb3_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb3.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb3.Clear();
         }
         private void tb4_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb4.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb4.Clear();
         }
         private void tb5_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb5.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb5.Clear();
         }
         private void tb6_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb6.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb6.Clear();
         }
         private void tb7_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb7.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb7.Clear();
         }
         private void tb8_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb8.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb8.Clear();
         }
         private void tb9_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb9.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb9.Clear();
         }
         private void tb10_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb10.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb10.Clear();
         }
         private void tb11_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb11.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb11.Clear();
         }
         private void tb12_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb12.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb12.Clear();
         }
         private void tb13_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb13.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb13.Clear();
         }
         private void tb14_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb14.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb14.Clear();
         }
         private void tb15_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb15.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb15.Clear();
         }
         private void tb16_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb16.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb16.Clear();
         }
         private void tb17_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb17.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb17.Clear();
         }
         private void tb18_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb18.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb18.Clear();
         }
         private void tb19_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb19.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb19.Clear();
         }
         private void tb20_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb20.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb20.Clear();
         }
         private void tb21_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb21.Text, out o);
-            SmallBoards.board1Clear(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1Clear(o);
+            BoardsAlgorithm.board1Check();
             tb21.Clear();
         }
         private void tb22_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb22.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb22.Clear();
         }
         private void tb23_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb23.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb23.Clear();
         }
         private void tb24_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb24.Text, out o);
-            SmallBoards.board2Clear(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2Clear(o);
+            BoardsAlgorithm.board2Check();
             tb24.Clear();
         }
         private void tb25_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb25.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb25.Clear();
         }
         private void tb26_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb26.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb26.Clear();
         }
         private void tb27_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb27.Text, out o);
-            SmallBoards.board3Clear(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3Clear(o);
+            BoardsAlgorithm.board3Check();
             tb27.Clear();
         }
         private void tb28_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb28.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb28.Clear();
         }
         private void tb29_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb29.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb29.Clear();
         }
         private void tb30_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb30.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb30.Clear();
         }
         private void tb31_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb31.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb31.Clear();
         }
         private void tb32_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb32.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb32.Clear();
         }
         private void tb33_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb33.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb33.Clear();
         }
         private void tb34_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb34.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb34.Clear();
         }
         private void tb35_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb35.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb35.Clear();
         }
         private void tb36_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb36.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb36.Clear();
         }
         private void tb37_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb37.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb37.Clear();
         }
         private void tb38_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb38.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb38.Clear();
         }
         private void tb39_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb39.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb39.Clear();
         }
         private void tb40_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb40.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb40.Clear();
         }
         private void tb41_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb41.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb41.Clear();
         }
         private void tb42_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb42.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb42.Clear();
         }
         private void tb43_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb43.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb43.Clear();
         }
         private void tb44_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb44.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb44.Clear();
         }
         private void tb45_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb45.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb45.Clear();
         }
         private void tb46_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb46.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb46.Clear();
         }
         private void tb47_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb47.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb47.Clear();
         }
         private void tb48_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb48.Text, out o);
-            SmallBoards.board4Clear(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4Clear(o);
+            BoardsAlgorithm.board4Check();
             tb48.Clear();
         }
         private void tb49_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb49.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb49.Clear();
         }
         private void tb50_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb50.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb50.Clear();
         }
         private void tb51_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb51.Text, out o);
-            SmallBoards.board5Clear(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5Clear(o);
+            BoardsAlgorithm.board5Check();
             tb51.Clear();
         }
         private void tb52_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb52.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb52.Clear();
         }
         private void tb53_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb53.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb53.Clear();
         }
         private void tb54_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb54.Text, out o);
-            SmallBoards.board6Clear(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6Clear(o);
+            BoardsAlgorithm.board6Check();
             tb54.Clear();
         }
         private void tb55_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb55.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb55.Clear();
         }
         private void tb56_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb56.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb56.Clear();
         }
         private void tb57_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb57.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb57.Clear();
         }
         private void tb58_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb58.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb58.Clear();
         }
         private void tb59_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb59.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb59.Clear();
         }
         private void tb60_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb60.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb60.Clear();
         }
         private void tb61_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb61.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb61.Clear();
         }
         private void tb62_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb62.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb62.Clear();
         }
         private void tb63_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb63.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb63.Clear();
         }
         private void tb64_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb64.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb64.Clear();
         }
         private void tb65_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb65.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb65.Clear();
         }
         private void tb66_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb66.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb66.Clear();
         }
         private void tb67_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb67.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb67.Clear();
         }
         private void tb68_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb68.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb68.Clear();
         }
         private void tb69_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb69.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb69.Clear();
         }
         private void tb70_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb70.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb70.Clear();
         }
         private void tb71_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb71.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb71.Clear();
         }
         private void tb72_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb72.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb72.Clear();
         }
         private void tb73_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb73.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb73.Clear();
         }
         private void tb74_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb74.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb74.Clear();
         }
         private void tb75_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb75.Text, out o);
-            SmallBoards.board7Clear(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7Clear(o);
+            BoardsAlgorithm.board7Check();
             tb75.Clear();
         }
         private void tb76_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb76.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb76.Clear();
         }
         private void tb77_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb77.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb77.Clear();
         }
         private void tb78_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb78.Text, out o);
-            SmallBoards.board8Clear(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8Clear(o);
+            BoardsAlgorithm.board8Check();
             tb78.Clear();
         }
         private void tb79_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb79.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb79.Clear();
         }
         private void tb80_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb80.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb80.Clear();
         }
         private void tb81_GotFocus(object sender, RoutedEventArgs e)
         {
             UInt16.TryParse(tb81.Text, out o);
-            SmallBoards.board9Clear(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9Clear(o);
+            BoardsAlgorithm.board9Check();
             tb81.Clear();
         }
 
@@ -1274,488 +1274,812 @@ namespace Sudoku
         private void tb1_TextChanged(object sender, TextChangedEventArgs e)
         {            
             UInt16.TryParse(tb1.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();            
         }
         private void tb2_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb2.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb3_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb3.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb4_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb4.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb5_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb5.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb6_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb6.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb7_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb7.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb8_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb8.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb9_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb9.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row1(o);
+            RowsAlgorithm.row1Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb10_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb10.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb11_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb11.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb12_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb12.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb13_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb13.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb14_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb14.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb15_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb15.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb16_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb16.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb17_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb17.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb18_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb18.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row2(o);
+            RowsAlgorithm.row2Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb19_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb19.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb20_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb20.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb21_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb21.Text, out o);
-            SmallBoards.board1(o);
-            SmallBoards.board1Check();
+            BoardsAlgorithm.board1(o);
+            BoardsAlgorithm.board1Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb22_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb22.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb23_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb23.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb24_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb24.Text, out o);
-            SmallBoards.board2(o);
-            SmallBoards.board2Check();
+            BoardsAlgorithm.board2(o);
+            BoardsAlgorithm.board2Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb25_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb25.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb26_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb26.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb27_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb27.Text, out o);
-            SmallBoards.board3(o);
-            SmallBoards.board3Check();
+            BoardsAlgorithm.board3(o);
+            BoardsAlgorithm.board3Check();
+            RowsAlgorithm.row3(o);
+            RowsAlgorithm.row3Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb28_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb28.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb29_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb29.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb30_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb30.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb31_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb31.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb32_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb32.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb33_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb33.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb34_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb34.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb35_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb35.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb36_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb36.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row4(o);
+            RowsAlgorithm.row4Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb37_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb37.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb38_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb38.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb39_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb39.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb40_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb40.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb41_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb41.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb42_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb42.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb43_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb43.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb44_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb44.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb45_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb45.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row5(o);
+            RowsAlgorithm.row5Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb46_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb46.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb47_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb47.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb48_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb48.Text, out o);
-            SmallBoards.board4(o);
-            SmallBoards.board4Check();
+            BoardsAlgorithm.board4(o);
+            BoardsAlgorithm.board4Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb49_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb49.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb50_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb50.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb51_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb51.Text, out o);
-            SmallBoards.board5(o);
-            SmallBoards.board5Check();
+            BoardsAlgorithm.board5(o);
+            BoardsAlgorithm.board5Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb52_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb52.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb53_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb53.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb54_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb54.Text, out o);
-            SmallBoards.board6(o);
-            SmallBoards.board6Check();
+            BoardsAlgorithm.board6(o);
+            BoardsAlgorithm.board6Check();
+            RowsAlgorithm.row6(o);
+            RowsAlgorithm.row6Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb55_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb55.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb56_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb56.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb57_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb57.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb58_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb58.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb59_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb59.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb60_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb60.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb61_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb61.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb62_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb62.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb63_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb63.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row7(o);
+            RowsAlgorithm.row7Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb64_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb64.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb65_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb65.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb66_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb66.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb67_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb67.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb68_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb68.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb69_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb69.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb70_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb70.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb71_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb71.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb72_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb72.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row8(o);
+            RowsAlgorithm.row8Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
         private void tb73_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb73.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column1(o);
+            ColumnsAlgorithm.column1Check();
         }
         private void tb74_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb74.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column2(o);
+            ColumnsAlgorithm.column2Check();
         }
         private void tb75_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb75.Text, out o);
-            SmallBoards.board7(o);
-            SmallBoards.board7Check();
+            BoardsAlgorithm.board7(o);
+            BoardsAlgorithm.board7Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column3(o);
+            ColumnsAlgorithm.column3Check();
         }
         private void tb76_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb76.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column4(o);
+            ColumnsAlgorithm.column4Check();
         }
         private void tb77_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb77.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column5(o);
+            ColumnsAlgorithm.column5Check();
         }
         private void tb78_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb78.Text, out o);
-            SmallBoards.board8(o);
-            SmallBoards.board8Check();
+            BoardsAlgorithm.board8(o);
+            BoardsAlgorithm.board8Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column6(o);
+            ColumnsAlgorithm.column6Check();
         }
         private void tb79_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb79.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column7(o);
+            ColumnsAlgorithm.column7Check();
         }
         private void tb80_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb80.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column8(o);
+            ColumnsAlgorithm.column8Check();
         }
         private void tb81_TextChanged(object sender, TextChangedEventArgs e)
         {
             UInt16.TryParse(tb81.Text, out o);
-            SmallBoards.board9(o);
-            SmallBoards.board9Check();
+            BoardsAlgorithm.board9(o);
+            BoardsAlgorithm.board9Check();
+            RowsAlgorithm.row9(o);
+            RowsAlgorithm.row9Check();
+            ColumnsAlgorithm.column9(o);
+            ColumnsAlgorithm.column9Check();
         }
     }
 }

@@ -7,29 +7,8 @@ using System.Windows;
 
 namespace Sudoku
 {
-    public static class Boards
-    { 
-
-        public static bool[] board1 = new bool[9];
-        public static bool[] board2 = new bool[9];
-        public static bool[] board3 = new bool[9];
-        public static bool[] board4 = new bool[9];
-        public static bool[] board5 = new bool[9];
-        public static bool[] board6 = new bool[9];
-        public static bool[] board7 = new bool[9];
-        public static bool[] board8 = new bool[9];
-        public static bool[] board9 = new bool[9];
-
-        public static bool[] row1 = new bool[9];
-        public static bool[] row2 = new bool[9];
-        public static bool[] row3 = new bool[9];
-        public static bool[] row4 = new bool[9];
-        public static bool[] row5 = new bool[9];
-        public static bool[] row6 = new bool[9];
-        public static bool[] row7 = new bool[9];
-        public static bool[] row8 = new bool[9];
-        public static bool[] row9 = new bool[9];
-
+        public static class ColumnsArrays
+    {
         public static bool[] column1 = new bool[9];
         public static bool[] column2 = new bool[9];
         public static bool[] column3 = new bool[9];
@@ -39,216 +18,210 @@ namespace Sudoku
         public static bool[] column7 = new bool[9];
         public static bool[] column8 = new bool[9];
         public static bool[] column9 = new bool[9];
-
-        public static bool[] allBoards = new bool[9];
-        
     }
-   
-    public static class SmallBoards
+    public static class ColumnsAlgorithm
     {
-       static MainWindow mw1 = Application.Current.Windows
+        static MainWindow mw1 = Application.Current.Windows
    .Cast<Window>()
    .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
-        public static void board1(ushort _value)
-        {
-            ushort value = _value;
-
-           if (value == 9)
-           {
-                Boards.board1[8] = true;
-           }
-           else if (value == 8)
-           {
-                Boards.board1[7] = true;
-            }
-           else if (value == 7)
-           {
-                Boards.board1[6] = true;
-            }
-           else if (value == 6)
-           {
-                Boards.board1[5] = true;
-            }
-           else if (value == 5)
-           {
-                Boards.board1[4] = true;
-            }
-           else if (value == 4)
-           {
-                Boards.board1[3] = true;
-            }
-           else if (value == 3)
-           {
-                Boards.board1[2] = true;
-            }
-           else if (value == 2)
-           {
-                Boards.board1[1] = true;
-            }
-           else if (value == 1)
-           {
-                Boards.board1[0] = true;
-            }
-           else
-           {
-
-           }    
-        }
-        public static void board1Clear(ushort _value)
+        public static void column1(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board1[8] = false;
+                ColumnsArrays.column1[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board1[7] = false;
+                ColumnsArrays.column1[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board1[6] = false;
+                ColumnsArrays.column1[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board1[5] = false;
+                ColumnsArrays.column1[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board1[4] = false;
+                ColumnsArrays.column1[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board1[3] = false;
+                ColumnsArrays.column1[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board1[2] = false;
+                ColumnsArrays.column1[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board1[1] = false;
+                ColumnsArrays.column1[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board1[0] = false;
+                ColumnsArrays.column1[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board1Check()
-        {
-            if (Boards.board1[0] && Boards.board1[1] && Boards.board1[2] && Boards.board1[3] && Boards.board1[4] && Boards.board1[5] && Boards.board1[6] && Boards.board1[7] && Boards.board1[8] == true)
-            {
-                Boards.allBoards[0] = true;
-                mw1.img1.Visibility = Visibility.Visible;
-                mw1.imw1.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                mw1.img1.Visibility = Visibility.Hidden;
-                mw1.imw1.Visibility = Visibility.Visible;
-            }
-        }
-        public static void board2(ushort _value)
+        public static void column1Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board2[8] = true;
+                ColumnsArrays.column1[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board2[7] = true;
+                ColumnsArrays.column1[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board2[6] = true;
+                ColumnsArrays.column1[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board2[5] = true;
+                ColumnsArrays.column1[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board2[4] = true;
+                ColumnsArrays.column1[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board2[3] = true;
+                ColumnsArrays.column1[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board2[2] = true;
+                ColumnsArrays.column1[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board2[1] = true;
+                ColumnsArrays.column1[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board2[0] = true;
+                ColumnsArrays.column1[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board2Clear(ushort _value)
+        public static void column1Check()
+        {
+            if (ColumnsArrays.column1[0] && ColumnsArrays.column1[1] && ColumnsArrays.column1[2] && ColumnsArrays.column1[3] && ColumnsArrays.column1[4] && ColumnsArrays.column1[5] && ColumnsArrays.column1[6] && ColumnsArrays.column1[7] && ColumnsArrays.column1[8] == true)
+            {
+
+                mw1.cbc.IsChecked = true;
+            }
+            else
+            {
+                mw1.cbc.IsChecked = false;
+            }
+        }
+        public static void column2(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board2[8] = false;
+                ColumnsArrays.column2[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board2[7] = false;
+                ColumnsArrays.column2[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board2[6] = false;
+                ColumnsArrays.column2[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board2[5] = false;
+                ColumnsArrays.column2[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board2[4] = false;
+                ColumnsArrays.column2[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board2[3] = false;
+                ColumnsArrays.column2[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board2[2] = false;
+                ColumnsArrays.column2[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board2[1] = false;
+                ColumnsArrays.column2[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board2[0] = false;
+                ColumnsArrays.column2[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board2Check()
+        public static void column2Clear(ushort _value)
         {
-            if (Boards.board2[0] && Boards.board2[1] && Boards.board2[2] && Boards.board2[3] && Boards.board2[4] && Boards.board2[5] && Boards.board2[6] && Boards.board2[7] && Boards.board2[8] == true)
+            ushort value = _value;
+
+            if (value == 9)
             {
-                Boards.allBoards[1] = true;
+                ColumnsArrays.column2[8] = false;
+            }
+            else if (value == 8)
+            {
+                ColumnsArrays.column2[7] = false;
+            }
+            else if (value == 7)
+            {
+                ColumnsArrays.column2[6] = false;
+            }
+            else if (value == 6)
+            {
+                ColumnsArrays.column2[5] = false;
+            }
+            else if (value == 5)
+            {
+                ColumnsArrays.column2[4] = false;
+            }
+            else if (value == 4)
+            {
+                ColumnsArrays.column2[3] = false;
+            }
+            else if (value == 3)
+            {
+                ColumnsArrays.column2[2] = false;
+            }
+            else if (value == 2)
+            {
+                ColumnsArrays.column2[1] = false;
+            }
+            else if (value == 1)
+            {
+                ColumnsArrays.column2[0] = false;
+            }
+            else
+            {
+
+            }
+        }
+        public static void column2Check()
+        {
+            if (ColumnsArrays.column2[0] && ColumnsArrays.column2[1] && ColumnsArrays.column2[2] && ColumnsArrays.column2[3] && ColumnsArrays.column2[4] && ColumnsArrays.column2[5] && ColumnsArrays.column2[6] && ColumnsArrays.column2[7] && ColumnsArrays.column2[8] == true)
+            {
+                
                 mw1.img2.Visibility = Visibility.Visible;
                 mw1.imw2.Visibility = Visibility.Hidden;
             }
@@ -258,101 +231,101 @@ namespace Sudoku
                 mw1.imw2.Visibility = Visibility.Visible;
             }
         }
-        public static void board3(ushort _value)
+        public static void column3(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board3[8] = true;
+                ColumnsArrays.column3[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board3[7] = true;
+                ColumnsArrays.column3[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board3[6] = true;
+                ColumnsArrays.column3[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board3[5] = true;
+                ColumnsArrays.column3[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board3[4] = true;
+                ColumnsArrays.column3[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board3[3] = true;
+                ColumnsArrays.column3[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board3[2] = true;
+                ColumnsArrays.column3[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board3[1] = true;
+                ColumnsArrays.column3[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board3[0] = true;
+                ColumnsArrays.column3[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board3Clear(ushort _value)
+        public static void column3Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board3[8] = false;
+                ColumnsArrays.column3[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board3[7] = false;
+                ColumnsArrays.column3[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board3[6] = false;
+                ColumnsArrays.column3[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board3[5] = false;
+                ColumnsArrays.column3[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board3[4] = false;
+                ColumnsArrays.column3[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board3[3] = false;
+                ColumnsArrays.column3[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board3[2] = false;
+                ColumnsArrays.column3[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board3[1] = false;
+                ColumnsArrays.column3[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board3[0] = false;
+                ColumnsArrays.column3[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board3Check()
+        public static void column3Check()
         {
-            if (Boards.board3[0] && Boards.board3[1] && Boards.board3[2] && Boards.board3[3] && Boards.board3[4] && Boards.board3[5] && Boards.board3[6] && Boards.board3[7] && Boards.board3[8] == true)
+            if (ColumnsArrays.column3[0] && ColumnsArrays.column3[1] && ColumnsArrays.column3[2] && ColumnsArrays.column3[3] && ColumnsArrays.column3[4] && ColumnsArrays.column3[5] && ColumnsArrays.column3[6] && ColumnsArrays.column3[7] && ColumnsArrays.column3[8] == true)
             {
-                Boards.allBoards[2] = true;
+                
                 mw1.img3.Visibility = Visibility.Visible;
                 mw1.imw3.Visibility = Visibility.Hidden;
             }
@@ -362,101 +335,101 @@ namespace Sudoku
                 mw1.imw3.Visibility = Visibility.Visible;
             }
         }
-        public static void board4(ushort _value)
+        public static void column4(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board4[8] = true;
+                ColumnsArrays.column4[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board4[7] = true;
+                ColumnsArrays.column4[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board4[6] = true;
+                ColumnsArrays.column4[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board4[5] = true;
+                ColumnsArrays.column4[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board4[4] = true;
+                ColumnsArrays.column4[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board4[3] = true;
+                ColumnsArrays.column4[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board4[2] = true;
+                ColumnsArrays.column4[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board4[1] = true;
+                ColumnsArrays.column4[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board4[0] = true;
+                ColumnsArrays.column4[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board4Clear(ushort _value)
+        public static void column4Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board4[8] = false;
+                ColumnsArrays.column4[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board4[7] = false;
+                ColumnsArrays.column4[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board4[6] = false;
+                ColumnsArrays.column4[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board4[5] = false;
+                ColumnsArrays.column4[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board4[4] = false;
+                ColumnsArrays.column4[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board4[3] = false;
+                ColumnsArrays.column4[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board4[2] = false;
+                ColumnsArrays.column4[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board4[1] = false;
+                ColumnsArrays.column4[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board4[0] = false;
+                ColumnsArrays.column4[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board4Check()
+        public static void column4Check()
         {
-            if (Boards.board4[0] && Boards.board4[1] && Boards.board4[2] && Boards.board4[3] && Boards.board4[4] && Boards.board4[5] && Boards.board4[6] && Boards.board4[7] && Boards.board4[8] == true)
+            if (ColumnsArrays.column4[0] && ColumnsArrays.column4[1] && ColumnsArrays.column4[2] && ColumnsArrays.column4[3] && ColumnsArrays.column4[4] && ColumnsArrays.column4[5] && ColumnsArrays.column4[6] && ColumnsArrays.column4[7] && ColumnsArrays.column4[8] == true)
             {
-                Boards.allBoards[3] = true;
+                
                 mw1.img4.Visibility = Visibility.Visible;
                 mw1.imw4.Visibility = Visibility.Hidden;
             }
@@ -466,101 +439,101 @@ namespace Sudoku
                 mw1.imw4.Visibility = Visibility.Visible;
             }
         }
-        public static void board5(ushort _value)
+        public static void column5(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board5[8] = true;
+                ColumnsArrays.column5[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board5[7] = true;
+                ColumnsArrays.column5[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board5[6] = true;
+                ColumnsArrays.column5[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board5[5] = true;
+                ColumnsArrays.column5[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board5[4] = true;
+                ColumnsArrays.column5[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board5[3] = true;
+                ColumnsArrays.column5[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board5[2] = true;
+                ColumnsArrays.column5[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board5[1] = true;
+                ColumnsArrays.column5[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board5[0] = true;
+                ColumnsArrays.column5[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board5Clear(ushort _value)
+        public static void column5Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board5[8] = false;
+                ColumnsArrays.column5[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board5[7] = false;
+                ColumnsArrays.column5[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board5[6] = false;
+                ColumnsArrays.column5[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board5[5] = false;
+                ColumnsArrays.column5[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board5[4] = false;
+                ColumnsArrays.column5[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board5[3] = false;
+                ColumnsArrays.column5[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board5[2] = false;
+                ColumnsArrays.column5[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board5[1] = false;
+                ColumnsArrays.column5[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board5[0] = false;
+                ColumnsArrays.column5[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board5Check()
+        public static void column5Check()
         {
-            if (Boards.board5[0] && Boards.board5[1] && Boards.board5[2] && Boards.board5[3] && Boards.board5[4] && Boards.board5[5] && Boards.board5[6] && Boards.board5[7] && Boards.board5[8] == true)
+            if (ColumnsArrays.column5[0] && ColumnsArrays.column5[1] && ColumnsArrays.column5[2] && ColumnsArrays.column5[3] && ColumnsArrays.column5[4] && ColumnsArrays.column5[5] && ColumnsArrays.column5[6] && ColumnsArrays.column5[7] && ColumnsArrays.column5[8] == true)
             {
-                Boards.allBoards[4] = true;
+                
                 mw1.img5.Visibility = Visibility.Visible;
                 mw1.imw5.Visibility = Visibility.Hidden;
             }
@@ -570,101 +543,101 @@ namespace Sudoku
                 mw1.imw5.Visibility = Visibility.Visible;
             }
         }
-        public static void board6(ushort _value)
+        public static void column6(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board6[8] = true;
+                ColumnsArrays.column6[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board6[7] = true;
+                ColumnsArrays.column6[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board6[6] = true;
+                ColumnsArrays.column6[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board6[5] = true;
+                ColumnsArrays.column6[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board6[4] = true;
+                ColumnsArrays.column6[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board6[3] = true;
+                ColumnsArrays.column6[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board6[2] = true;
+                ColumnsArrays.column6[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board6[1] = true;
+                ColumnsArrays.column6[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board6[0] = true;
+                ColumnsArrays.column6[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board6Clear(ushort _value)
+        public static void column6Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board6[8] = false;
+                ColumnsArrays.column6[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board6[7] = false;
+                ColumnsArrays.column6[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board6[6] = false;
+                ColumnsArrays.column6[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board6[5] = false;
+                ColumnsArrays.column6[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board6[4] = false;
+                ColumnsArrays.column6[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board6[3] = false;
+                ColumnsArrays.column6[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board6[2] = false;
+                ColumnsArrays.column6[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board6[1] = false;
+                ColumnsArrays.column6[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board6[0] = false;
+                ColumnsArrays.column6[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board6Check()
+        public static void column6Check()
         {
-            if (Boards.board6[0] && Boards.board6[1] && Boards.board6[2] && Boards.board6[3] && Boards.board6[4] && Boards.board6[5] && Boards.board6[6] && Boards.board6[7] && Boards.board6[8] == true)
+            if (ColumnsArrays.column6[0] && ColumnsArrays.column6[1] && ColumnsArrays.column6[2] && ColumnsArrays.column6[3] && ColumnsArrays.column6[4] && ColumnsArrays.column6[5] && ColumnsArrays.column6[6] && ColumnsArrays.column6[7] && ColumnsArrays.column6[8] == true)
             {
-                Boards.allBoards[5] = true;
+                
                 mw1.img6.Visibility = Visibility.Visible;
                 mw1.imw6.Visibility = Visibility.Hidden;
             }
@@ -674,101 +647,101 @@ namespace Sudoku
                 mw1.imw6.Visibility = Visibility.Visible;
             }
         }
-        public static void board7(ushort _value)
+        public static void column7(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board7[8] = true;
+                ColumnsArrays.column7[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board7[7] = true;
+                ColumnsArrays.column7[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board7[6] = true;
+                ColumnsArrays.column7[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board7[5] = true;
+                ColumnsArrays.column7[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board7[4] = true;
+                ColumnsArrays.column7[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board7[3] = true;
+                ColumnsArrays.column7[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board7[2] = true;
+                ColumnsArrays.column7[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board7[1] = true;
+                ColumnsArrays.column7[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board7[0] = true;
+                ColumnsArrays.column7[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board7Clear(ushort _value)
+        public static void column7Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board7[8] = false;
+                ColumnsArrays.column7[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board7[7] = false;
+                ColumnsArrays.column7[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board7[6] = false;
+                ColumnsArrays.column7[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board7[5] = false;
+                ColumnsArrays.column7[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board7[4] = false;
+                ColumnsArrays.column7[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board7[3] = false;
+                ColumnsArrays.column7[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board7[2] = false;
+                ColumnsArrays.column7[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board7[1] = false;
+                ColumnsArrays.column7[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board7[0] = false;
+                ColumnsArrays.column7[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board7Check()
+        public static void column7Check()
         {
-            if (Boards.board7[0] && Boards.board7[1] && Boards.board7[2] && Boards.board7[3] && Boards.board7[4] && Boards.board7[5] && Boards.board7[6] && Boards.board7[7] && Boards.board7[8] == true)
+            if (ColumnsArrays.column7[0] && ColumnsArrays.column7[1] && ColumnsArrays.column7[2] && ColumnsArrays.column7[3] && ColumnsArrays.column7[4] && ColumnsArrays.column7[5] && ColumnsArrays.column7[6] && ColumnsArrays.column7[7] && ColumnsArrays.column7[8] == true)
             {
-                Boards.allBoards[6] = true;
+                
                 mw1.img7.Visibility = Visibility.Visible;
                 mw1.imw7.Visibility = Visibility.Hidden;
             }
@@ -778,101 +751,101 @@ namespace Sudoku
                 mw1.imw7.Visibility = Visibility.Visible;
             }
         }
-        public static void board8(ushort _value)
+        public static void column8(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board8[8] = true;
+                ColumnsArrays.column8[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board8[7] = true;
+                ColumnsArrays.column8[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board8[6] = true;
+                ColumnsArrays.column8[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board8[5] = true;
+                ColumnsArrays.column8[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board8[4] = true;
+                ColumnsArrays.column8[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board8[3] = true;
+                ColumnsArrays.column8[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board8[2] = true;
+                ColumnsArrays.column8[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board8[1] = true;
+                ColumnsArrays.column8[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board8[0] = true;
+                ColumnsArrays.column8[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board8Clear(ushort _value)
+        public static void column8Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board8[8] = false;
+                ColumnsArrays.column8[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board8[7] = false;
+                ColumnsArrays.column8[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board8[6] = false;
+                ColumnsArrays.column8[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board8[5] = false;
+                ColumnsArrays.column8[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board8[4] = false;
+                ColumnsArrays.column8[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board8[3] = false;
+                ColumnsArrays.column8[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board8[2] = false;
+                ColumnsArrays.column8[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board8[1] = false;
+                ColumnsArrays.column8[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board8[0] = false;
+                ColumnsArrays.column8[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board8Check()
+        public static void column8Check()
         {
-            if (Boards.board8[0] && Boards.board8[1] && Boards.board8[2] && Boards.board8[3] && Boards.board8[4] && Boards.board8[5] && Boards.board8[6] && Boards.board8[7] && Boards.board8[8] == true)
+            if (ColumnsArrays.column8[0] && ColumnsArrays.column8[1] && ColumnsArrays.column8[2] && ColumnsArrays.column8[3] && ColumnsArrays.column8[4] && ColumnsArrays.column8[5] && ColumnsArrays.column8[6] && ColumnsArrays.column8[7] && ColumnsArrays.column8[8] == true)
             {
-                Boards.allBoards[7] = true;
+                
                 mw1.img8.Visibility = Visibility.Visible;
                 mw1.imw8.Visibility = Visibility.Hidden;
             }
@@ -882,101 +855,101 @@ namespace Sudoku
                 mw1.img8.Visibility = Visibility.Hidden;
             }
         }
-        public static void board9(ushort _value)
+        public static void column9(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board9[8] = true;
+                ColumnsArrays.column9[8] = true;
             }
             else if (value == 8)
             {
-                Boards.board9[7] = true;
+                ColumnsArrays.column9[7] = true;
             }
             else if (value == 7)
             {
-                Boards.board9[6] = true;
+                ColumnsArrays.column9[6] = true;
             }
             else if (value == 6)
             {
-                Boards.board9[5] = true;
+                ColumnsArrays.column9[5] = true;
             }
             else if (value == 5)
             {
-                Boards.board9[4] = true;
+                ColumnsArrays.column9[4] = true;
             }
             else if (value == 4)
             {
-                Boards.board9[3] = true;
+                ColumnsArrays.column9[3] = true;
             }
             else if (value == 3)
             {
-                Boards.board9[2] = true;
+                ColumnsArrays.column9[2] = true;
             }
             else if (value == 2)
             {
-                Boards.board9[1] = true;
+                ColumnsArrays.column9[1] = true;
             }
             else if (value == 1)
             {
-                Boards.board9[0] = true;
+                ColumnsArrays.column9[0] = true;
             }
             else
             {
 
             }
         }
-        public static void board9Clear(ushort _value)
+        public static void column9Clear(ushort _value)
         {
             ushort value = _value;
 
             if (value == 9)
             {
-                Boards.board9[8] = false;
+                ColumnsArrays.column9[8] = false;
             }
             else if (value == 8)
             {
-                Boards.board9[7] = false;
+                ColumnsArrays.column9[7] = false;
             }
             else if (value == 7)
             {
-                Boards.board9[6] = false;
+                ColumnsArrays.column9[6] = false;
             }
             else if (value == 6)
             {
-                Boards.board9[5] = false;
+                ColumnsArrays.column9[5] = false;
             }
             else if (value == 5)
             {
-                Boards.board9[4] = false;
+                ColumnsArrays.column9[4] = false;
             }
             else if (value == 4)
             {
-                Boards.board9[3] = false;
+                ColumnsArrays.column9[3] = false;
             }
             else if (value == 3)
             {
-                Boards.board9[2] = false;
+                ColumnsArrays.column9[2] = false;
             }
             else if (value == 2)
             {
-                Boards.board9[1] = false;
+                ColumnsArrays.column9[1] = false;
             }
             else if (value == 1)
             {
-                Boards.board9[0] = false;
+                ColumnsArrays.column9[0] = false;
             }
             else
             {
 
             }
         }
-        public static void board9Check()
+        public static void column9Check()
         {
-            if (Boards.board9[0] && Boards.board9[1] && Boards.board9[2] && Boards.board9[3] && Boards.board9[4] && Boards.board9[5] && Boards.board9[6] && Boards.board9[7] && Boards.board9[8] == true)
+            if (ColumnsArrays.column9[0] && ColumnsArrays.column9[1] && ColumnsArrays.column9[2] && ColumnsArrays.column9[3] && ColumnsArrays.column9[4] && ColumnsArrays.column9[5] && ColumnsArrays.column9[6] && ColumnsArrays.column9[7] && ColumnsArrays.column9[8] == true)
             {
-                Boards.allBoards[8] = true;
+               
                 mw1.img9.Visibility = Visibility.Visible;
                 mw1.imw9.Visibility = Visibility.Hidden;
             }

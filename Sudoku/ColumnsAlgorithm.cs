@@ -25,9 +25,16 @@ namespace Sudoku
    .Cast<Window>()
    .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
+        private static ushort oldvalue;
+        private static ushort value;
+
         public static void column1(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -72,7 +79,7 @@ namespace Sudoku
         }
         public static void column1Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -129,7 +136,11 @@ namespace Sudoku
         }
         public static void column2(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -174,7 +185,7 @@ namespace Sudoku
         }
         public static void column2Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -233,7 +244,11 @@ namespace Sudoku
         }
         public static void column3(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -278,7 +293,7 @@ namespace Sudoku
         }
         public static void column3Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -337,7 +352,11 @@ namespace Sudoku
         }
         public static void column4(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -382,7 +401,7 @@ namespace Sudoku
         }
         public static void column4Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -441,7 +460,11 @@ namespace Sudoku
         }
         public static void column5(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -486,7 +509,7 @@ namespace Sudoku
         }
         public static void column5Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -545,7 +568,11 @@ namespace Sudoku
         }
         public static void column6(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -590,7 +617,7 @@ namespace Sudoku
         }
         public static void column6Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -649,7 +676,11 @@ namespace Sudoku
         }
         public static void column7(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -694,7 +725,7 @@ namespace Sudoku
         }
         public static void column7Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -753,7 +784,11 @@ namespace Sudoku
         }
         public static void column8(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -798,7 +833,7 @@ namespace Sudoku
         }
         public static void column8Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -857,7 +892,11 @@ namespace Sudoku
         }
         public static void column9(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -902,7 +941,7 @@ namespace Sudoku
         }
         public static void column9Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -959,5 +998,70 @@ namespace Sudoku
                 mw1.imw9.Visibility = Visibility.Visible;
             }
         }
+
+        public static void column1Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column1[oldvalue - 1] = false;
+            }
+        }
+        public static void column2Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column2[oldvalue - 1] = false;
+            }
+        }
+        public static void column3Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column3[oldvalue - 1] = false;
+            }
+        }
+        public static void column4Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column4[oldvalue - 1] = false;
+            }
+        }
+        public static void column5Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column5[oldvalue - 1] = false;
+            }
+        }
+        public static void column6Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column6[oldvalue - 1] = false;
+            }
+        }
+        public static void column7Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column7[oldvalue - 1] = false;
+            }
+        }
+        public static void column8Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column8[oldvalue - 1] = false;
+            }
+        }
+        public static void column9Clear()
+        {
+            if (oldvalue > 0)
+            {
+                ColumnsArrays.column9[oldvalue - 1] = false;
+            }
+        }
+
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
+
 namespace Sudoku
 {
     public static class BoardsArrays
@@ -17,9 +18,10 @@ namespace Sudoku
         public static bool[] board6 = new bool[9];
         public static bool[] board7 = new bool[9];
         public static bool[] board8 = new bool[9];
-        public static bool[] board9 = new bool[9];        
+        public static bool[] board9 = new bool[9];
 
         public static bool[] allBoards = new bool[9];
+        public static ushort[] oldvalue = new ushort[9];
     }
    
     public static class BoardsAlgorithm
@@ -28,41 +30,106 @@ namespace Sudoku
    .Cast<Window>()
    .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
+        public static ushort oldvalue;
+        private static ushort value;
+
+        public static void board1Initialize()
+        {
+            ushort o = 0;
+            UInt16.TryParse(mw1.tb1.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb2.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb3.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb10.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb11.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb12.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb19.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb20.Text, out o);
+            board1(o);
+            UInt16.TryParse(mw1.tb21.Text, out o);
+            board1(o);
+        }
+        public static void board1InitializeClear()
+        {
+            ushort o = 0;
+            UInt16.TryParse(mw1.tb1.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb2.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb3.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb10.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb11.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb12.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb19.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb20.Text, out o);
+            board1Clear(o);
+            UInt16.TryParse(mw1.tb21.Text, out o);
+            board1Clear(o);
+            for(ushort i = 1; i < 9; i++)
+            {
+                board1Clear(i);
+            }
+
+
+        }
+
         public static void board1(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
            if (value == 9)
            {
                 BoardsArrays.board1[8] = true;
-           }
+
+            }
            else if (value == 8)
            {
                 BoardsArrays.board1[7] = true;
+
             }
            else if (value == 7)
            {
                 BoardsArrays.board1[6] = true;
+
             }
            else if (value == 6)
            {
                 BoardsArrays.board1[5] = true;
+
             }
            else if (value == 5)
            {
                 BoardsArrays.board1[4] = true;
+
             }
            else if (value == 4)
            {
                 BoardsArrays.board1[3] = true;
+
             }
            else if (value == 3)
            {
                 BoardsArrays.board1[2] = true;
+
             }
            else if (value == 2)
            {
-                BoardsArrays.board1[1] = true;
+                BoardsArrays.board1[1] = true;                
             }
            else if (value == 1)
            {
@@ -70,12 +137,15 @@ namespace Sudoku
             }
            else
            {
-
-           }    
+                mw1.img1.Visibility = Visibility.Hidden;
+                mw1.imw1.Visibility = Visibility.Visible;
+            }           
+            
         }
+                
         public static void board1Clear(ushort _value)
-        {
-            ushort value = _value;
+        {                       
+            value = _value;
 
             if (value == 9)
             {
@@ -115,7 +185,8 @@ namespace Sudoku
             }
             else
             {
-
+                mw1.img1.Visibility = Visibility.Hidden;
+                mw1.imw1.Visibility = Visibility.Visible;
             }
         }
         public static void board1Check()
@@ -128,13 +199,18 @@ namespace Sudoku
             }
             else
             {
+                BoardsArrays.allBoards[0] = false;
                 mw1.img1.Visibility = Visibility.Hidden;
-                mw1.imw1.Visibility = Visibility.Visible;
+                mw1.imw1.Visibility = Visibility.Visible;                
             }
         }
         public static void board2(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -177,9 +253,11 @@ namespace Sudoku
 
             }
         }
+        
+
         public static void board2Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -238,7 +316,11 @@ namespace Sudoku
         }
         public static void board3(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -283,7 +365,7 @@ namespace Sudoku
         }
         public static void board3Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -342,7 +424,11 @@ namespace Sudoku
         }
         public static void board4(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -387,7 +473,7 @@ namespace Sudoku
         }
         public static void board4Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -446,7 +532,11 @@ namespace Sudoku
         }
         public static void board5(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -491,7 +581,7 @@ namespace Sudoku
         }
         public static void board5Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -550,7 +640,11 @@ namespace Sudoku
         }
         public static void board6(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -595,7 +689,7 @@ namespace Sudoku
         }
         public static void board6Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -654,7 +748,11 @@ namespace Sudoku
         }
         public static void board7(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -699,7 +797,7 @@ namespace Sudoku
         }
         public static void board7Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -758,7 +856,11 @@ namespace Sudoku
         }
         public static void board8(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -803,7 +905,7 @@ namespace Sudoku
         }
         public static void board8Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -862,7 +964,11 @@ namespace Sudoku
         }
         public static void board9(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -907,7 +1013,7 @@ namespace Sudoku
         }
         public static void board9Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -962,6 +1068,71 @@ namespace Sudoku
             {
                 mw1.img9.Visibility = Visibility.Hidden;
                 mw1.imw9.Visibility = Visibility.Visible;
+            }
+        }
+
+        public static void board1Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board1[oldvalue - 1] = false;
+            }
+
+        }
+        public static void board2Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board2[oldvalue - 1] = false;
+            }
+        }
+        public static void board3Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board3[oldvalue - 1] = false;
+            }
+        }
+        public static void board4Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board4[oldvalue - 1] = false;
+            }
+        }
+        public static void board5Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board5[oldvalue - 1] = false;
+            }
+        }
+        public static void board6Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board6[oldvalue - 1] = false;
+            }
+        }
+        public static void board7Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board7[oldvalue - 1] = false;
+            }
+        }
+        public static void board8Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board8[oldvalue - 1] = false;
+            }
+        }
+        public static void board9Clear()
+        {
+            if (oldvalue > 0)
+            {
+                BoardsArrays.board9[oldvalue - 1] = false;
             }
         }
     }

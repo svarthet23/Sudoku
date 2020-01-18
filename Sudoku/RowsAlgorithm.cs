@@ -25,9 +25,16 @@ namespace Sudoku
    .Cast<Window>()
    .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
+        private static ushort oldvalue;
+        private static ushort value;
+
         public static void row1(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -72,7 +79,7 @@ namespace Sudoku
         }
         public static void row1Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -128,7 +135,11 @@ namespace Sudoku
         }
         public static void row2(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -173,7 +184,7 @@ namespace Sudoku
         }
         public static void row2Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -232,7 +243,11 @@ namespace Sudoku
         }
         public static void row3(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -277,7 +292,7 @@ namespace Sudoku
         }
         public static void row3Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -336,7 +351,11 @@ namespace Sudoku
         }
         public static void row4(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -381,7 +400,7 @@ namespace Sudoku
         }
         public static void row4Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -440,7 +459,11 @@ namespace Sudoku
         }
         public static void row5(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -485,7 +508,7 @@ namespace Sudoku
         }
         public static void row5Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -531,8 +554,7 @@ namespace Sudoku
         public static void row5Check()
         {
             if (RowsArrays.row5[0] && RowsArrays.row5[1] && RowsArrays.row5[2] && RowsArrays.row5[3] && RowsArrays.row5[4] && RowsArrays.row5[5] && RowsArrays.row5[6] && RowsArrays.row5[7] && RowsArrays.row5[8] == true)
-            {
-                
+            {                
                 mw1.img5.Visibility = Visibility.Visible;
                 mw1.imw5.Visibility = Visibility.Hidden;
             }
@@ -544,7 +566,11 @@ namespace Sudoku
         }
         public static void row6(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -589,7 +615,7 @@ namespace Sudoku
         }
         public static void row6Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -635,8 +661,7 @@ namespace Sudoku
         public static void row6Check()
         {
             if (RowsArrays.row6[0] && RowsArrays.row6[1] && RowsArrays.row6[2] && RowsArrays.row6[3] && RowsArrays.row6[4] && RowsArrays.row6[5] && RowsArrays.row6[6] && RowsArrays.row6[7] && RowsArrays.row6[8] == true)
-            {
-                
+            {                
                 mw1.img6.Visibility = Visibility.Visible;
                 mw1.imw6.Visibility = Visibility.Hidden;
             }
@@ -648,7 +673,11 @@ namespace Sudoku
         }
         public static void row7(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -693,7 +722,7 @@ namespace Sudoku
         }
         public static void row7Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -740,7 +769,6 @@ namespace Sudoku
         {
             if (RowsArrays.row7[0] && RowsArrays.row7[1] && RowsArrays.row7[2] && RowsArrays.row7[3] && RowsArrays.row7[4] && RowsArrays.row7[5] && RowsArrays.row7[6] && RowsArrays.row7[7] && RowsArrays.row7[8] == true)
             {
-                
                 mw1.img7.Visibility = Visibility.Visible;
                 mw1.imw7.Visibility = Visibility.Hidden;
             }
@@ -752,7 +780,11 @@ namespace Sudoku
         }
         public static void row8(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -797,7 +829,7 @@ namespace Sudoku
         }
         public static void row8Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -843,8 +875,7 @@ namespace Sudoku
         public static void row8Check()
         {
             if (RowsArrays.row8[0] && RowsArrays.row8[1] && RowsArrays.row8[2] && RowsArrays.row8[3] && RowsArrays.row8[4] && RowsArrays.row8[5] && RowsArrays.row8[6] && RowsArrays.row8[7] && RowsArrays.row8[8] == true)
-            {
-                
+            {               
                 mw1.img8.Visibility = Visibility.Visible;
                 mw1.imw8.Visibility = Visibility.Hidden;
             }
@@ -856,7 +887,11 @@ namespace Sudoku
         }
         public static void row9(ushort _value)
         {
-            ushort value = _value;
+            if (_value > 0)
+            {
+                oldvalue = value;
+            }
+            value = _value;
 
             if (value == 9)
             {
@@ -901,7 +936,7 @@ namespace Sudoku
         }
         public static void row9Clear(ushort _value)
         {
-            ushort value = _value;
+            value = _value;
 
             if (value == 9)
             {
@@ -948,7 +983,6 @@ namespace Sudoku
         {
             if (RowsArrays.row9[0] && RowsArrays.row9[1] && RowsArrays.row9[2] && RowsArrays.row9[3] && RowsArrays.row9[4] && RowsArrays.row9[5] && RowsArrays.row9[6] && RowsArrays.row9[7] && RowsArrays.row9[8] == true)
             {
-                
                 mw1.img9.Visibility = Visibility.Visible;
                 mw1.imw9.Visibility = Visibility.Hidden;
             }
@@ -956,6 +990,70 @@ namespace Sudoku
             {
                 mw1.img9.Visibility = Visibility.Hidden;
                 mw1.imw9.Visibility = Visibility.Visible;
+            }
+        }
+
+        public static void row1Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row1[oldvalue - 1] = false;
+            }
+        }
+        public static void row2Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row2[oldvalue - 1] = false;
+            }
+        }
+        public static void row3Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row3[oldvalue - 1] = false;
+            }
+        }
+        public static void row4Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row4[oldvalue - 1] = false;
+            }
+        }
+        public static void row5Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row5[oldvalue - 1] = false;
+            }
+        }
+        public static void row6Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row6[oldvalue - 1] = false;
+            }
+        }
+        public static void row7Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row7[oldvalue - 1] = false;
+            }
+        }
+        public static void row8Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row8[oldvalue - 1] = false;
+            }
+        }
+        public static void row9Clear()
+        {
+            if (oldvalue > 0)
+            {
+                RowsArrays.row9[oldvalue - 1] = false;
             }
         }
     }

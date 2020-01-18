@@ -35,19 +35,59 @@ namespace Sudoku
     .Cast<Window>()
     .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
-        public void Start()
+        public void Start(ushort _value)
         {
-            i = rn1.Next(1, 27);
+            for(ushort i = 0; i < 9; i++)
+            {
+                BoardsArrays.board1[i] = false;
+                BoardsArrays.board2[i] = false;
+                BoardsArrays.board3[i] = false;
+                BoardsArrays.board4[i] = false;
+                BoardsArrays.board5[i] = false;
+                BoardsArrays.board6[i] = false;
+                BoardsArrays.board7[i] = false;
+                BoardsArrays.board8[i] = false;
+                BoardsArrays.board9[i] = false;
+                RowsArrays.row1[i] = false;
+                RowsArrays.row2[i] = false;
+                RowsArrays.row3[i] = false;
+                RowsArrays.row4[i] = false;
+                RowsArrays.row5[i] = false;
+                RowsArrays.row6[i] = false;
+                RowsArrays.row7[i] = false;
+                RowsArrays.row8[i] = false;
+                RowsArrays.row9[i] = false;
+                ColumnsArrays.column1[i] = false;
+                ColumnsArrays.column2[i] = false;
+                ColumnsArrays.column3[i] = false;
+                ColumnsArrays.column4[i] = false;
+                ColumnsArrays.column5[i] = false;
+                ColumnsArrays.column6[i] = false;
+                ColumnsArrays.column7[i] = false;
+                ColumnsArrays.column8[i] = false;
+                ColumnsArrays.column9[i] = false;
+                BoardsArrays.allBoards[i] = false;
+            }
+
+        i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb1.Clear();
             }
             else
             {
+                while (_i > 0 && BoardsArrays.board1[_i - 1] || RowsArrays.row1[_i - 1] || ColumnsArrays.column1[_i - 1] == true)
+                {
+                    i = rn1.Next(1, _value);
+                    if (_i == 0 )
+                    {
+                        _i++;
+                    }
+                }
                 mw1.tb1.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb2.Clear();
@@ -56,8 +96,8 @@ namespace Sudoku
             {
                 mw1.tb2.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb3.Clear();
@@ -66,8 +106,8 @@ namespace Sudoku
             {
                 mw1.tb3.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb4.Clear();
@@ -76,8 +116,8 @@ namespace Sudoku
             {
                 mw1.tb4.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb5.Clear();
@@ -86,8 +126,8 @@ namespace Sudoku
             {
                 mw1.tb5.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb6.Clear();
@@ -96,8 +136,8 @@ namespace Sudoku
             {
                 mw1.tb6.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb7.Clear();
@@ -106,8 +146,8 @@ namespace Sudoku
             {
                 mw1.tb7.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb8.Clear();
@@ -116,8 +156,8 @@ namespace Sudoku
             {
                 mw1.tb8.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb9.Clear();
@@ -126,8 +166,8 @@ namespace Sudoku
             {
                 mw1.tb9.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb10.Clear();
@@ -136,8 +176,8 @@ namespace Sudoku
             {
                 mw1.tb10.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb11.Clear();
@@ -146,8 +186,8 @@ namespace Sudoku
             {
                 mw1.tb11.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb12.Clear();
@@ -156,8 +196,8 @@ namespace Sudoku
             {
                 mw1.tb12.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb13.Clear();
@@ -166,8 +206,8 @@ namespace Sudoku
             {
                 mw1.tb13.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb14.Clear();
@@ -176,8 +216,8 @@ namespace Sudoku
             {
                 mw1.tb14.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb15.Clear();
@@ -186,8 +226,8 @@ namespace Sudoku
             {
                 mw1.tb15.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb16.Clear();
@@ -196,8 +236,8 @@ namespace Sudoku
             {
                 mw1.tb16.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb17.Clear();
@@ -206,8 +246,8 @@ namespace Sudoku
             {
                 mw1.tb17.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb18.Clear();
@@ -216,8 +256,8 @@ namespace Sudoku
             {
                 mw1.tb18.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb19.Clear();
@@ -226,8 +266,8 @@ namespace Sudoku
             {
                 mw1.tb19.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb20.Clear();
@@ -236,8 +276,8 @@ namespace Sudoku
             {
                 mw1.tb20.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb21.Clear();
@@ -246,8 +286,8 @@ namespace Sudoku
             {
                 mw1.tb21.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb22.Clear();
@@ -256,8 +296,8 @@ namespace Sudoku
             {
                 mw1.tb22.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb23.Clear();
@@ -266,8 +306,8 @@ namespace Sudoku
             {
                 mw1.tb23.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb24.Clear();
@@ -276,8 +316,8 @@ namespace Sudoku
             {
                 mw1.tb24.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb25.Clear();
@@ -286,8 +326,8 @@ namespace Sudoku
             {
                 mw1.tb25.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb26.Clear();
@@ -296,8 +336,8 @@ namespace Sudoku
             {
                 mw1.tb26.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb27.Clear();
@@ -306,8 +346,8 @@ namespace Sudoku
             {
                 mw1.tb27.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb28.Clear();
@@ -316,8 +356,8 @@ namespace Sudoku
             {
                 mw1.tb28.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb29.Clear();
@@ -326,8 +366,8 @@ namespace Sudoku
             {
                 mw1.tb29.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb30.Clear();
@@ -336,8 +376,8 @@ namespace Sudoku
             {
                 mw1.tb30.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb31.Clear();
@@ -346,8 +386,8 @@ namespace Sudoku
             {
                 mw1.tb31.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb32.Clear();
@@ -356,8 +396,8 @@ namespace Sudoku
             {
                 mw1.tb32.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb33.Clear();
@@ -366,8 +406,8 @@ namespace Sudoku
             {
                 mw1.tb33.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb34.Clear();
@@ -376,8 +416,8 @@ namespace Sudoku
             {
                 mw1.tb34.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb35.Clear();
@@ -386,8 +426,8 @@ namespace Sudoku
             {
                 mw1.tb35.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb36.Clear();
@@ -396,8 +436,8 @@ namespace Sudoku
             {
                 mw1.tb36.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb37.Clear();
@@ -406,8 +446,8 @@ namespace Sudoku
             {
                 mw1.tb37.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb38.Clear();
@@ -416,8 +456,8 @@ namespace Sudoku
             {
                 mw1.tb38.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb39.Clear();
@@ -426,8 +466,8 @@ namespace Sudoku
             {
                 mw1.tb39.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb40.Clear();
@@ -436,8 +476,8 @@ namespace Sudoku
             {
                 mw1.tb40.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb41.Clear();
@@ -446,8 +486,8 @@ namespace Sudoku
             {
                 mw1.tb41.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb42.Clear();
@@ -456,8 +496,8 @@ namespace Sudoku
             {
                 mw1.tb42.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb43.Clear();
@@ -466,8 +506,8 @@ namespace Sudoku
             {
                 mw1.tb43.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb44.Clear();
@@ -476,8 +516,8 @@ namespace Sudoku
             {
                 mw1.tb44.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb45.Clear();
@@ -486,8 +526,8 @@ namespace Sudoku
             {
                 mw1.tb45.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb46.Clear();
@@ -496,8 +536,8 @@ namespace Sudoku
             {
                 mw1.tb46.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb47.Clear();
@@ -506,8 +546,8 @@ namespace Sudoku
             {
                 mw1.tb47.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb48.Clear();
@@ -516,8 +556,8 @@ namespace Sudoku
             {
                 mw1.tb48.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb49.Clear();
@@ -526,8 +566,8 @@ namespace Sudoku
             {
                 mw1.tb49.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb50.Clear();
@@ -536,8 +576,8 @@ namespace Sudoku
             {
                 mw1.tb50.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb51.Clear();
@@ -546,8 +586,8 @@ namespace Sudoku
             {
                 mw1.tb51.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb52.Clear();
@@ -556,8 +596,8 @@ namespace Sudoku
             {
                 mw1.tb52.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb53.Clear();
@@ -566,8 +606,8 @@ namespace Sudoku
             {
                 mw1.tb53.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb54.Clear();
@@ -576,8 +616,8 @@ namespace Sudoku
             {
                 mw1.tb54.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb55.Clear();
@@ -586,8 +626,8 @@ namespace Sudoku
             {
                 mw1.tb55.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb56.Clear();
@@ -596,8 +636,8 @@ namespace Sudoku
             {
                 mw1.tb56.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb57.Clear();
@@ -606,8 +646,8 @@ namespace Sudoku
             {
                 mw1.tb57.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb58.Clear();
@@ -616,8 +656,8 @@ namespace Sudoku
             {
                 mw1.tb58.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb59.Clear();
@@ -626,8 +666,8 @@ namespace Sudoku
             {
                 mw1.tb59.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb60.Clear();
@@ -636,8 +676,8 @@ namespace Sudoku
             {
                 mw1.tb60.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb61.Clear();
@@ -646,8 +686,8 @@ namespace Sudoku
             {
                 mw1.tb61.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb62.Clear();
@@ -656,8 +696,8 @@ namespace Sudoku
             {
                 mw1.tb62.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb63.Clear();
@@ -666,8 +706,8 @@ namespace Sudoku
             {
                 mw1.tb63.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb64.Clear();
@@ -676,8 +716,8 @@ namespace Sudoku
             {
                 mw1.tb64.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb65.Clear();
@@ -686,8 +726,8 @@ namespace Sudoku
             {
                 mw1.tb65.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb66.Clear();
@@ -696,8 +736,8 @@ namespace Sudoku
             {
                 mw1.tb66.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb67.Clear();
@@ -706,8 +746,8 @@ namespace Sudoku
             {
                 mw1.tb67.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb68.Clear();
@@ -716,8 +756,8 @@ namespace Sudoku
             {
                 mw1.tb68.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb69.Clear();
@@ -726,8 +766,8 @@ namespace Sudoku
             {
                 mw1.tb69.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb70.Clear();
@@ -736,8 +776,8 @@ namespace Sudoku
             {
                 mw1.tb70.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb71.Clear();
@@ -746,8 +786,8 @@ namespace Sudoku
             {
                 mw1.tb71.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb72.Clear();
@@ -756,8 +796,8 @@ namespace Sudoku
             {
                 mw1.tb72.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb73.Clear();
@@ -766,8 +806,8 @@ namespace Sudoku
             {
                 mw1.tb73.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb74.Clear();
@@ -776,8 +816,8 @@ namespace Sudoku
             {
                 mw1.tb74.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb75.Clear();
@@ -786,8 +826,8 @@ namespace Sudoku
             {
                 mw1.tb75.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb76.Clear();
@@ -796,8 +836,8 @@ namespace Sudoku
             {
                 mw1.tb76.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb77.Clear();
@@ -806,8 +846,8 @@ namespace Sudoku
             {
                 mw1.tb77.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb78.Clear();
@@ -816,8 +856,8 @@ namespace Sudoku
             {
                 mw1.tb78.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb79.Clear();
@@ -826,8 +866,8 @@ namespace Sudoku
             {
                 mw1.tb79.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb80.Clear();
@@ -836,8 +876,8 @@ namespace Sudoku
             {
                 mw1.tb80.Text = _i.ToString();
             }
-            Thread.Sleep(1);
-            i = rn1.Next(1, 27);
+            Thread.Sleep(2);
+            i = rn1.Next(1, _value);
             if (_i == 0)
             {
                 mw1.tb81.Clear();
@@ -846,7 +886,8 @@ namespace Sudoku
             {
                 mw1.tb81.Text = _i.ToString();
             }
-            Thread.Sleep(1);
+            Thread.Sleep(2);
+
         }
     }
 }

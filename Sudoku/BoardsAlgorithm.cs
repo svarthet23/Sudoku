@@ -21,7 +21,6 @@ namespace Sudoku
         public static bool[] board9 = new bool[9];
 
         public static bool[] allBoards = new bool[9];
-        public static ushort[] oldvalue = new ushort[9];
     }
    
     public static class BoardsAlgorithm
@@ -30,277 +29,338 @@ namespace Sudoku
    .Cast<Window>()
    .FirstOrDefault(window => window is MainWindow) as MainWindow;
 
-        public static ushort oldvalue;
-        private static ushort value;
-
-        public static void board1Initialize()
+        private static void boardClear(ushort value)
         {
-            ushort o = 0;
-            UInt16.TryParse(mw1.tb1.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb2.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb3.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb10.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb11.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb12.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb19.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb20.Text, out o);
-            board1(o);
-            UInt16.TryParse(mw1.tb21.Text, out o);
-            board1(o);
-        }
-        public static void board1InitializeClear()
-        {
-            ushort o = 0;
-            UInt16.TryParse(mw1.tb1.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb2.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb3.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb10.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb11.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb12.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb19.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb20.Text, out o);
-            board1Clear(o);
-            UInt16.TryParse(mw1.tb21.Text, out o);
-            board1Clear(o);
-            for(ushort i = 1; i < 9; i++)
+            switch (value)
             {
-                board1Clear(i);
-            }
-
-
-        }
-
-        public static void board1(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-           if (value == 9)
-           {
-                BoardsArrays.board1[8] = true;
-
-            }
-           else if (value == 8)
-           {
-                BoardsArrays.board1[7] = true;
-
-            }
-           else if (value == 7)
-           {
-                BoardsArrays.board1[6] = true;
-
-            }
-           else if (value == 6)
-           {
-                BoardsArrays.board1[5] = true;
-
-            }
-           else if (value == 5)
-           {
-                BoardsArrays.board1[4] = true;
-
-            }
-           else if (value == 4)
-           {
-                BoardsArrays.board1[3] = true;
-
-            }
-           else if (value == 3)
-           {
-                BoardsArrays.board1[2] = true;
-
-            }
-           else if (value == 2)
-           {
-                BoardsArrays.board1[1] = true;                
-            }
-           else if (value == 1)
-           {
-                BoardsArrays.board1[0] = true;
-            }
-           else
-           {
-                mw1.img1.Visibility = Visibility.Hidden;
-                mw1.imw1.Visibility = Visibility.Visible;
-            }           
-            
-        }
-                
-        public static void board1Clear(ushort _value)
-        {                       
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board1[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board1[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board1[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board1[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board1[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board1[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board1[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board1[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board1[0] = false;
-            }
-            else
-            {
-                mw1.img1.Visibility = Visibility.Hidden;
-                mw1.imw1.Visibility = Visibility.Visible;
-            }
-        }
-        public static void board1Check()
-        {
-            if (BoardsArrays.board1[0] && BoardsArrays.board1[1] && BoardsArrays.board1[2] && BoardsArrays.board1[3] && BoardsArrays.board1[4] && BoardsArrays.board1[5] && BoardsArrays.board1[6] && BoardsArrays.board1[7] && BoardsArrays.board1[8] == true)
-            {
-                BoardsArrays.allBoards[0] = true;
-                mw1.img1.Visibility = Visibility.Visible;
-                mw1.imw1.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                BoardsArrays.allBoards[0] = false;
-                mw1.img1.Visibility = Visibility.Hidden;
-                mw1.imw1.Visibility = Visibility.Visible;                
-            }
-        }
-        public static void board2(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board2[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board2[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board2[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board2[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board2[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board2[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board2[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board2[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board2[0] = true;
-            }
-            else
-            {
-
+                case 1:
+                    Array.Clear(BoardsArrays.board1, 0, 9);
+                    break;                             
+                case 2:                                
+                    Array.Clear(BoardsArrays.board2, 0, 9);
+                    break;                              
+                case 3:                                 
+                    Array.Clear(BoardsArrays.board3, 0, 9);
+                    break;                              
+                case 4:                                 
+                    Array.Clear(BoardsArrays.board4, 0, 9);
+                    break;                              
+                case 5:                                 
+                    Array.Clear(BoardsArrays.board5, 0, 9);
+                    break;                              
+                case 6:                                 
+                    Array.Clear(BoardsArrays.board6, 0, 9);
+                    break;                             
+                case 7:                                
+                    Array.Clear(BoardsArrays.board7, 0, 9);
+                    break;                             
+                case 8:                                
+                    Array.Clear(BoardsArrays.board8, 0, 9);
+                    break;                              
+                case 9:                                 
+                    Array.Clear(BoardsArrays.board9, 0, 9);
+                    break;
             }
         }
         
-
-        public static void board2Clear(ushort _value)
+        public static void board1()
         {
-            value = _value;
+            boardClear(1);
 
-            if (value == 9)
+            ushort o;
+            UInt16.TryParse(mw1.tb1.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb2.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb3.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb10.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb11.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb12.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb19.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb20.Text, out o);
+            board1ToArray(o);
+            UInt16.TryParse(mw1.tb21.Text, out o);
+            board1ToArray(o);
+
+            board1Check();
+        }
+        private static void board1ToArray(ushort value)
+        {            
+            if (value > 0)
+                  BoardsArrays.board1[value - 1] = true;
+        }
+        public static void board2()
+        {
+            boardClear(2);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb4.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb5.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb6.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb13.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb14.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb15.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb22.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb23.Text, out o);
+            board2ToArray(o);
+            UInt16.TryParse(mw1.tb24.Text, out o);
+            board2ToArray(o);
+
+            board2Check();
+        }
+        private static void board2ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board2[value - 1] = true;
+        }
+        public static void board3()
+        {
+            boardClear(3);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb7.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb8.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb9.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb16.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb17.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb18.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb25.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb26.Text, out o);
+            board3ToArray(o);
+            UInt16.TryParse(mw1.tb27.Text, out o);
+            board3ToArray(o);
+
+            board3Check();
+        }
+        private static void board3ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board3[value - 1] = true;
+        }
+        public static void board4()
+        {
+            boardClear(4);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb28.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb29.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb30.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb37.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb38.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb39.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb46.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb47.Text, out o);
+            board4ToArray(o);
+            UInt16.TryParse(mw1.tb48.Text, out o);
+            board4ToArray(o);
+
+            board4Check();
+        }
+        private static void board4ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board4[value - 1] = true;
+        }
+        public static void board5()
+        {
+            boardClear(5);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb31.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb32.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb33.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb40.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb41.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb42.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb49.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb50.Text, out o);
+            board5ToArray(o);
+            UInt16.TryParse(mw1.tb51.Text, out o);
+            board5ToArray(o);
+
+            board5Check();
+        }
+        private static void board5ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board5[value - 1] = true;
+        }
+        public static void board6()
+        {
+            boardClear(6);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb34.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb35.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb36.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb43.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb44.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb45.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb52.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb53.Text, out o);
+            board6ToArray(o);
+            UInt16.TryParse(mw1.tb54.Text, out o);
+            board6ToArray(o);
+
+            board6Check();
+        }
+        private static void board6ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board6[value - 1] = true;
+        }
+        public static void board7()
+        {
+            boardClear(7);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb55.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb56.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb57.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb64.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb65.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb66.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb73.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb74.Text, out o);
+            board7ToArray(o);
+            UInt16.TryParse(mw1.tb75.Text, out o);
+            board7ToArray(o);
+
+            board7Check();
+        }
+        private static void board7ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board7[value - 1] = true;
+        }
+        public static void board8()
+        {
+            boardClear(8);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb58.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb59.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb60.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb67.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb68.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb69.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb76.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb77.Text, out o);
+            board8ToArray(o);
+            UInt16.TryParse(mw1.tb78.Text, out o);
+            board8ToArray(o);
+
+            board8Check();
+        }
+        private static void board8ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board8[value - 1] = true;
+        }
+        public static void board9()
+        {
+            boardClear(9);
+
+            ushort o;
+            UInt16.TryParse(mw1.tb61.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb62.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb63.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb70.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb71.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb72.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb79.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb80.Text, out o);
+            board9ToArray(o);
+            UInt16.TryParse(mw1.tb81.Text, out o);
+            board9ToArray(o);
+
+            board9Check();
+        }
+        private static void board9ToArray(ushort value)
+        {
+            if (value > 0)
+                BoardsArrays.board9[value - 1] = true;
+        }
+
+
+        private static void board1Check()
+        {
+            if (BoardsArrays.board1[0] && BoardsArrays.board1[1] && BoardsArrays.board1[2] && BoardsArrays.board1[3] && BoardsArrays.board1[4] && BoardsArrays.board1[5] && BoardsArrays.board1[6] && BoardsArrays.board1[7] && BoardsArrays.board1[8] == true)
             {
-                BoardsArrays.board2[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board2[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board2[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board2[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board2[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board2[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board2[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board2[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board2[0] = false;
+                mw1.img1.Visibility = Visibility.Visible;
+                mw1.imw1.Visibility = Visibility.Hidden;
+                BoardsArrays.allBoards[0] = true;
             }
             else
             {
-
+                mw1.img1.Visibility = Visibility.Hidden;
+                mw1.imw1.Visibility = Visibility.Visible;                
+                BoardsArrays.allBoards[0] = false;
             }
         }
-        public static void board2Check()
+        
+        private static void board2Check()
         {
             if (BoardsArrays.board2[0] && BoardsArrays.board2[1] && BoardsArrays.board2[2] && BoardsArrays.board2[3] && BoardsArrays.board2[4] && BoardsArrays.board2[5] && BoardsArrays.board2[6] && BoardsArrays.board2[7] && BoardsArrays.board2[8] == true)
             {
@@ -314,101 +374,8 @@ namespace Sudoku
                 mw1.imw2.Visibility = Visibility.Visible;
             }
         }
-        public static void board3(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board3[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board3[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board3[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board3[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board3[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board3[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board3[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board3[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board3[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board3Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board3[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board3[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board3[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board3[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board3[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board3[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board3[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board3[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board3[0] = false;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board3Check()
+    
+        private static void board3Check()
         {
             if (BoardsArrays.board3[0] && BoardsArrays.board3[1] && BoardsArrays.board3[2] && BoardsArrays.board3[3] && BoardsArrays.board3[4] && BoardsArrays.board3[5] && BoardsArrays.board3[6] && BoardsArrays.board3[7] && BoardsArrays.board3[8] == true)
             {
@@ -422,100 +389,7 @@ namespace Sudoku
                 mw1.imw3.Visibility = Visibility.Visible;
             }
         }
-        public static void board4(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board4[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board4[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board4[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board4[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board4[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board4[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board4[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board4[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board4[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board4Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board4[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board4[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board4[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board4[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board4[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board4[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board4[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board4[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board4[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+        
         public static void board4Check()
         {
             if (BoardsArrays.board4[0] && BoardsArrays.board4[1] && BoardsArrays.board4[2] && BoardsArrays.board4[3] && BoardsArrays.board4[4] && BoardsArrays.board4[5] && BoardsArrays.board4[6] && BoardsArrays.board4[7] && BoardsArrays.board4[8] == true)
@@ -530,100 +404,7 @@ namespace Sudoku
                 mw1.imw4.Visibility = Visibility.Visible;
             }
         }
-        public static void board5(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board5[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board5[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board5[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board5[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board5[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board5[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board5[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board5[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board5[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board5Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board5[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board5[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board5[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board5[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board5[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board5[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board5[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board5[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board5[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+        
         public static void board5Check()
         {
             if (BoardsArrays.board5[0] && BoardsArrays.board5[1] && BoardsArrays.board5[2] && BoardsArrays.board5[3] && BoardsArrays.board5[4] && BoardsArrays.board5[5] && BoardsArrays.board5[6] && BoardsArrays.board5[7] && BoardsArrays.board5[8] == true)
@@ -638,100 +419,7 @@ namespace Sudoku
                 mw1.imw5.Visibility = Visibility.Visible;
             }
         }
-        public static void board6(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board6[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board6[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board6[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board6[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board6[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board6[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board6[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board6[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board6[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board6Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board6[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board6[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board6[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board6[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board6[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board6[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board6[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board6[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board6[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+        
         public static void board6Check()
         {
             if (BoardsArrays.board6[0] && BoardsArrays.board6[1] && BoardsArrays.board6[2] && BoardsArrays.board6[3] && BoardsArrays.board6[4] && BoardsArrays.board6[5] && BoardsArrays.board6[6] && BoardsArrays.board6[7] && BoardsArrays.board6[8] == true)
@@ -746,100 +434,7 @@ namespace Sudoku
                 mw1.imw6.Visibility = Visibility.Visible;
             }
         }
-        public static void board7(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board7[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board7[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board7[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board7[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board7[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board7[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board7[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board7[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board7[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board7Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board7[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board7[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board7[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board7[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board7[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board7[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board7[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board7[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board7[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+       
         public static void board7Check()
         {
             if (BoardsArrays.board7[0] && BoardsArrays.board7[1] && BoardsArrays.board7[2] && BoardsArrays.board7[3] && BoardsArrays.board7[4] && BoardsArrays.board7[5] && BoardsArrays.board7[6] && BoardsArrays.board7[7] && BoardsArrays.board7[8] == true)
@@ -854,100 +449,7 @@ namespace Sudoku
                 mw1.imw7.Visibility = Visibility.Visible;
             }
         }
-        public static void board8(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board8[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board8[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board8[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board8[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board8[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board8[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board8[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board8[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board8[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board8Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board8[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board8[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board8[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board8[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board8[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board8[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board8[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board8[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board8[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+       
         public static void board8Check()
         {
             if (BoardsArrays.board8[0] && BoardsArrays.board8[1] && BoardsArrays.board8[2] && BoardsArrays.board8[3] && BoardsArrays.board8[4] && BoardsArrays.board8[5] && BoardsArrays.board8[6] && BoardsArrays.board8[7] && BoardsArrays.board8[8] == true)
@@ -962,100 +464,7 @@ namespace Sudoku
                 mw1.img8.Visibility = Visibility.Hidden;
             }
         }
-        public static void board9(ushort _value)
-        {
-            if (_value > 0)
-            {
-                oldvalue = value;
-            }
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board9[8] = true;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board9[7] = true;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board9[6] = true;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board9[5] = true;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board9[4] = true;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board9[3] = true;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board9[2] = true;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board9[1] = true;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board9[0] = true;
-            }
-            else
-            {
-
-            }
-        }
-        public static void board9Clear(ushort _value)
-        {
-            value = _value;
-
-            if (value == 9)
-            {
-                BoardsArrays.board9[8] = false;
-            }
-            else if (value == 8)
-            {
-                BoardsArrays.board9[7] = false;
-            }
-            else if (value == 7)
-            {
-                BoardsArrays.board9[6] = false;
-            }
-            else if (value == 6)
-            {
-                BoardsArrays.board9[5] = false;
-            }
-            else if (value == 5)
-            {
-                BoardsArrays.board9[4] = false;
-            }
-            else if (value == 4)
-            {
-                BoardsArrays.board9[3] = false;
-            }
-            else if (value == 3)
-            {
-                BoardsArrays.board9[2] = false;
-            }
-            else if (value == 2)
-            {
-                BoardsArrays.board9[1] = false;
-            }
-            else if (value == 1)
-            {
-                BoardsArrays.board9[0] = false;
-            }
-            else
-            {
-
-            }
-        }
+        
         public static void board9Check()
         {
             if (BoardsArrays.board9[0] && BoardsArrays.board9[1] && BoardsArrays.board9[2] && BoardsArrays.board9[3] && BoardsArrays.board9[4] && BoardsArrays.board9[5] && BoardsArrays.board9[6] && BoardsArrays.board9[7] && BoardsArrays.board9[8] == true)
@@ -1069,71 +478,6 @@ namespace Sudoku
                 mw1.img9.Visibility = Visibility.Hidden;
                 mw1.imw9.Visibility = Visibility.Visible;
             }
-        }
-
-        public static void board1Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board1[oldvalue - 1] = false;
-            }
-
-        }
-        public static void board2Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board2[oldvalue - 1] = false;
-            }
-        }
-        public static void board3Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board3[oldvalue - 1] = false;
-            }
-        }
-        public static void board4Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board4[oldvalue - 1] = false;
-            }
-        }
-        public static void board5Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board5[oldvalue - 1] = false;
-            }
-        }
-        public static void board6Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board6[oldvalue - 1] = false;
-            }
-        }
-        public static void board7Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board7[oldvalue - 1] = false;
-            }
-        }
-        public static void board8Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board8[oldvalue - 1] = false;
-            }
-        }
-        public static void board9Clear()
-        {
-            if (oldvalue > 0)
-            {
-                BoardsArrays.board9[oldvalue - 1] = false;
-            }
-        }
+        }   
     }
 }

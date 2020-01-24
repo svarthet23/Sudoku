@@ -18,6 +18,8 @@ namespace Sudoku
         public static bool[] row7 = new bool[9];
         public static bool[] row8 = new bool[9];
         public static bool[] row9 = new bool[9];
+
+        public static bool[] allRows = new bool[9];
     }
     public static class RowsAlgorithm
     {
@@ -343,9 +345,11 @@ namespace Sudoku
         {
             if (RowsArrays.row1[0] && RowsArrays.row1[1] && RowsArrays.row1[2] && RowsArrays.row1[3] && RowsArrays.row1[4] && RowsArrays.row1[5] && RowsArrays.row1[6] && RowsArrays.row1[7] && RowsArrays.row1[8] == true)
             {
+                RowsArrays.allRows[0] = true;
             }
             else
             {
+                RowsArrays.allRows[0] = false;
             }
         }
 
@@ -353,9 +357,11 @@ namespace Sudoku
         {
             if (RowsArrays.row2[0] && RowsArrays.row2[1] && RowsArrays.row2[2] && RowsArrays.row2[3] && RowsArrays.row2[4] && RowsArrays.row2[5] && RowsArrays.row2[6] && RowsArrays.row2[7] && RowsArrays.row2[8] == true)
             {
+                RowsArrays.allRows[1] = true;
             }
             else
             {
+                RowsArrays.allRows[1] = false;
             }
         }
 
@@ -363,9 +369,11 @@ namespace Sudoku
         {
             if (RowsArrays.row3[0] && RowsArrays.row3[1] && RowsArrays.row3[2] && RowsArrays.row3[3] && RowsArrays.row3[4] && RowsArrays.row3[5] && RowsArrays.row3[6] && RowsArrays.row3[7] && RowsArrays.row3[8] == true)
             {
+                RowsArrays.allRows[2] = true;
             }
             else
             {
+                RowsArrays.allRows[2] = false;
             }
         }
 
@@ -373,9 +381,11 @@ namespace Sudoku
         {
             if (RowsArrays.row4[0] && RowsArrays.row4[1] && RowsArrays.row4[2] && RowsArrays.row4[3] && RowsArrays.row4[4] && RowsArrays.row4[5] && RowsArrays.row4[6] && RowsArrays.row4[7] && RowsArrays.row4[8] == true)
             {
+                RowsArrays.allRows[3] = true;
             }
             else
             {
+                RowsArrays.allRows[3] = false;
             }
         }
 
@@ -383,9 +393,11 @@ namespace Sudoku
         {
             if (RowsArrays.row5[0] && RowsArrays.row5[1] && RowsArrays.row5[2] && RowsArrays.row5[3] && RowsArrays.row5[4] && RowsArrays.row5[5] && RowsArrays.row5[6] && RowsArrays.row5[7] && RowsArrays.row5[8] == true)
             {
+                RowsArrays.allRows[4] = true;
             }
             else
             {
+                RowsArrays.allRows[4] = false;
             }
         }
 
@@ -393,9 +405,11 @@ namespace Sudoku
         {
             if (RowsArrays.row6[0] && RowsArrays.row6[1] && RowsArrays.row6[2] && RowsArrays.row6[3] && RowsArrays.row6[4] && RowsArrays.row6[5] && RowsArrays.row6[6] && RowsArrays.row6[7] && RowsArrays.row6[8] == true)
             {
+                RowsArrays.allRows[5] = true;
             }
             else
             {
+                RowsArrays.allRows[5] = false;
             }
         }
 
@@ -403,9 +417,11 @@ namespace Sudoku
         {
             if (RowsArrays.row7[0] && RowsArrays.row7[1] && RowsArrays.row7[2] && RowsArrays.row7[3] && RowsArrays.row7[4] && RowsArrays.row7[5] && RowsArrays.row7[6] && RowsArrays.row7[7] && RowsArrays.row7[8] == true)
             {
+                RowsArrays.allRows[6] = true;
             }
             else
             {
+                RowsArrays.allRows[6] = false;
             }
         }
 
@@ -413,9 +429,11 @@ namespace Sudoku
         {
             if (RowsArrays.row8[0] && RowsArrays.row8[1] && RowsArrays.row8[2] && RowsArrays.row8[3] && RowsArrays.row8[4] && RowsArrays.row8[5] && RowsArrays.row8[6] && RowsArrays.row8[7] && RowsArrays.row8[8] == true)
             {
+                RowsArrays.allRows[7] = true;
             }
             else
             {
+                RowsArrays.allRows[7] = false;
             }
         }
 
@@ -423,9 +441,11 @@ namespace Sudoku
         {
             if (RowsArrays.row9[0] && RowsArrays.row9[1] && RowsArrays.row9[2] && RowsArrays.row9[3] && RowsArrays.row9[4] && RowsArrays.row9[5] && RowsArrays.row9[6] && RowsArrays.row9[7] && RowsArrays.row9[8] == true)
             {
+                RowsArrays.allRows[8] = true;
             }
             else
             {
+                RowsArrays.allRows[8] = false;
             }
         }
     }

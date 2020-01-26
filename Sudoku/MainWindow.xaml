@@ -127,13 +127,9 @@
             <Button x:Name="bGenerate" Content="Generate(alpha)" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="2" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="11" Click="bGenerate_Click"/>
             <Label x:Name="difficultyLabel" Content="Łatwy" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFDEDEDE"/>
             <Slider x:Name="difficultySlider" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Maximum="3" Width="100" SmallChange="1" IsSnapToTickEnabled="True" TickPlacement="TopLeft" ValueChanged="difficultySlider_ValueChanged" Minimum="1"/>
-            <Label x:Name="WinLabel" Content="Wygrałeś" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFFFC800" Visibility="Hidden"/>
         </Grid>
 
-        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,57,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
-            <Grid.Background>
-                <ImageBrush ImageSource="img\Background.png"/>
-            </Grid.Background>
+        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,60,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -144,25 +140,87 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Image x:Name='img1' Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img4' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img7' Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img2' Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img5' Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img8' Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img3' Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img6' Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='img9' Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Good.png"/>
-            <Image x:Name='imw1' Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw4' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw7' Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw2' Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw5' Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw8' Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw3' Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw6' Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
-            <Image x:Name='imw9' Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1,1,1,1" Source="img\Wrong.png"/>
+            <Image x:Name='img1' Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img4' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img7' Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img2' Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img5' Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img8' Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img3' Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img6' Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='img9' Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Good.png"/>
+            <Image x:Name='imw1' Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw4' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw7' Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw2' Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw5' Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw8' Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw3' Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw6' Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
+            <Image x:Name='imw9' Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\Wrong.png"/>
 
+        </Grid>
+        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,-50,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name='imcg1' Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg2' Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg3' Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg4' Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg5' Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg6' Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg7' Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg8' Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcg9' Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodColumn.png"/>
+            <Image x:Name='imcw1' Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw2' Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw3' Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw4' Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw5' Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw6' Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw7' Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw8' Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+            <Image x:Name='imcw9' Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongColumn.png"/>
+        </Grid>
+        <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,-160,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image x:Name='imrg1' Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg2' Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg3' Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg4' Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg5' Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg6' Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg7' Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg8' Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrg9' Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\GoodRow.png"/>
+            <Image x:Name='imrw1' Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw2' Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw3' Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw4' Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw5' Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw6' Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw7' Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw8' Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
+            <Image x:Name='imrw9' Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
         </Grid>
     </Grid>
 </Window>

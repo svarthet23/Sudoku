@@ -343,7 +343,6 @@ namespace Sudoku
                 BoardsArrays.board9[value - 1] = true;
         }
 
-
         private static void board1Check()
         {
             if (BoardsArrays.board1[0] && BoardsArrays.board1[1] && BoardsArrays.board1[2] && BoardsArrays.board1[3] && BoardsArrays.board1[4] && BoardsArrays.board1[5] && BoardsArrays.board1[6] && BoardsArrays.board1[7] && BoardsArrays.board1[8] == true)
@@ -351,6 +350,8 @@ namespace Sudoku
                 mw1.img1.Visibility = Visibility.Visible;
                 mw1.imw1.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[0] = true;
+                WinCheck();
+
             }
             else
             {
@@ -367,6 +368,8 @@ namespace Sudoku
                 mw1.img2.Visibility = Visibility.Visible;
                 mw1.imw2.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[1] = true;
+                WinCheck();
+
             }
             else
             {
@@ -383,6 +386,8 @@ namespace Sudoku
                 mw1.img3.Visibility = Visibility.Visible;
                 mw1.imw3.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[2] = true;
+                WinCheck();
+
             }
             else
             {
@@ -399,6 +404,8 @@ namespace Sudoku
                 mw1.img4.Visibility = Visibility.Visible;
                 mw1.imw4.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[3] = true;
+                WinCheck();
+
             }
             else
             {
@@ -415,6 +422,8 @@ namespace Sudoku
                 mw1.img5.Visibility = Visibility.Visible;
                 mw1.imw5.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[4] = true;
+                WinCheck();
+
             }
             else
             {
@@ -431,6 +440,8 @@ namespace Sudoku
                 mw1.img6.Visibility = Visibility.Visible;
                 mw1.imw6.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[5] = true;
+                WinCheck();
+
             }
             else
             {
@@ -447,6 +458,8 @@ namespace Sudoku
                 mw1.img7.Visibility = Visibility.Visible;
                 mw1.imw7.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[6] = true;
+                WinCheck();
+
             }
             else
             {
@@ -463,6 +476,8 @@ namespace Sudoku
                 mw1.img8.Visibility = Visibility.Visible;
                 mw1.imw8.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[7] = true;
+                WinCheck();
+
             }
             else
             {
@@ -479,6 +494,8 @@ namespace Sudoku
                 mw1.img9.Visibility = Visibility.Visible;
                 mw1.imw9.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[8] = true;
+                WinCheck();
+
             }
             else
             {
@@ -487,5 +504,12 @@ namespace Sudoku
                 BoardsArrays.allBoards[8] = false;
             }
         }   
+        private static void WinCheck()
+        {
+            if(BoardsArrays.allBoards[0] && BoardsArrays.allBoards[1] && BoardsArrays.allBoards[2] && BoardsArrays.allBoards[3] && BoardsArrays.allBoards[4] && BoardsArrays.allBoards[5] && BoardsArrays.allBoards[6] && BoardsArrays.allBoards[7] && BoardsArrays.allBoards[8] == true && RowsArrays.allRows[0] && RowsArrays.allRows[1] && RowsArrays.allRows[2] && RowsArrays.allRows[3] && RowsArrays.allRows[4] && RowsArrays.allRows[5] && RowsArrays.allRows[6] && RowsArrays.allRows[7] && RowsArrays.allRows[8] == true && ColumnsArrays.allColumns[0] && ColumnsArrays.allColumns[1] && ColumnsArrays.allColumns[2] && ColumnsArrays.allColumns[3] && ColumnsArrays.allColumns[4] && ColumnsArrays.allColumns[5] && ColumnsArrays.allColumns[6] && ColumnsArrays.allColumns[7] && ColumnsArrays.allColumns[8] == true)
+            {
+                MessageBox.Show("Wygrałeś");
+            }
+        }
     }
 }

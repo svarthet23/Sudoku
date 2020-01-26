@@ -30,7 +30,7 @@ namespace Sudoku
         }
 
         private static ushort breaker = 0;
-        private static ushort looper = 60;
+        private static ushort looper = 200;
         public static bool done = false;
 
         static MainWindow mw1 = Application.Current.Windows

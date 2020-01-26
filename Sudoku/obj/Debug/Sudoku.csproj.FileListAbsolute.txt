@@ -12,3 +12,5 @@ C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.Properties.Resources.res
 C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.GenerateResource.cache
 C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.exe
 C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Welcome.g.cs
+C:\_VisualStudioProjects\Sudoku\Sudoku\obj\Debug\Welcome.baml

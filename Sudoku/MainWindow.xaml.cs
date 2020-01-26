@@ -15,6 +15,9 @@ namespace Sudoku
         public MainWindow()
         {
             InitializeComponent();
+            Welcome welcome = new Welcome();
+            welcome.Topmost = true;
+            
         }
 
         private void tb_MouseMove(object sender, MouseEventArgs e)
@@ -1610,31 +1613,30 @@ namespace Sudoku
 
         private void difficultySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
             if (difficultySlider.Value == 1)
             {
                 difficultyLabel.Content = "Łatwy";
-                diffgene = 18;
-                diffgame = 30;
+                diffgene = 13;
+                diffgame = 50;
             }
             else if (difficultySlider.Value == 2)
             {
                 difficultyLabel.Content = "Średni";
-                diffgene = 27;
-                diffgame = 50;
+                diffgene = 22;
+                diffgame = 65;
             }
             else
             {
                 difficultyLabel.Content = "Trudny";
-                diffgene = 45;
-                diffgame = 70;
+                diffgene = 40;
+                diffgame = 80;  
             }
         }
-
         private void bStart_Click(object sender, RoutedEventArgs e)
         {
             Game.Start(diffgame);
             bStart.Content = "ReStart";
         }
+        
     }
 }

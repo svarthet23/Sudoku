@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sudoku"
         mc:Ignorable="d"
-        Title="Welcome" Height="200" Width="500" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Focusable="False" Visibility="Visible" WindowStyle="None">
+        Title="Welcome" Height="200" Width="500" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Focusable="False" Visibility="Visible" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FFA0A0A0" Offset="1"/>
-            <GradientStop Color="#FE262626"/>
-        </LinearGradientBrush>
+        <RadialGradientBrush>
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF8C8C8C" Offset="1"/>
+            <GradientStop Color="#FE000000"/>
+        </RadialGradientBrush>
     </Window.Background>
     <Grid>
-        <Label Content="SUDOKU#" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Unispace" FontStyle="Italic"/>
+        <Label Content="SUDOKU#" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Unispace" Foreground="White" FontStyle="Italic"/>
         <Label Content="Oskar Podgórski" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Unispace"/>
         <Label Content="Tomasz Gaj" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontFamily="Unispace"/>
 

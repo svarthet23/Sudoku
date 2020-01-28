@@ -477,7 +477,6 @@ namespace Sudoku
                 mw1.imw8.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[7] = true;
                 WinCheck();
-
             }
             else
             {
@@ -495,7 +494,6 @@ namespace Sudoku
                 mw1.imw9.Visibility = Visibility.Hidden;
                 BoardsArrays.allBoards[8] = true;
                 WinCheck();
-
             }
             else
             {

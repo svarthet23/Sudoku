@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Threading;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace Sudoku
 {
@@ -2374,7 +2376,23 @@ namespace Sudoku
                         continue;
                     Game.ReEnter(); breaker = 0;
                 }
- 
+
+                foreach (var tb in mw1.tbGrid.Children)
+                {
+                    if (tb is TextBox)
+                    {
+                        if (((TextBox)tb).Text == "")
+                        {
+                            ((TextBox)tb).Focusable = true;
+                            ((TextBox)tb).Foreground = Brushes.Black;
+                        }
+                        else
+                        {
+                            ((TextBox)tb).Focusable = false;
+                            ((TextBox)tb).Foreground = Brushes.LightGray;
+                        }
+                    }
+                }
                 done = true;
             }
         }

@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Threading;
 
 namespace Sudoku
 {
@@ -17,7 +17,6 @@ namespace Sudoku
             InitializeComponent();
             Welcome welcome = new Welcome();
             welcome.Topmost = true;
-            
         }
 
         private void tb_MouseMove(object sender, MouseEventArgs e)
@@ -1604,6 +1603,11 @@ namespace Sudoku
         private ushort diffgene = 1;
         private ushort diffgame = 1;
 
+        private void bStart_Click(object sender, RoutedEventArgs e)
+        {
+            Game.Start(diffgame);
+            bStart.Content = "ReStart";
+        }      
         private void bGenerate_Click(object sender, RoutedEventArgs e)
         {
             Generator.done = false;
@@ -1616,13 +1620,13 @@ namespace Sudoku
             if (difficultySlider.Value == 1)
             {
                 difficultyLabel.Content = "Łatwy";
-                diffgene = 13;
+                diffgene = 18;
                 diffgame = 50;
             }
             else if (difficultySlider.Value == 2)
             {
                 difficultyLabel.Content = "Średni";
-                diffgene = 22;
+                diffgene = 23;
                 diffgame = 65;
             }
             else
@@ -1632,11 +1636,5 @@ namespace Sudoku
                 diffgame = 80;  
             }
         }
-        private void bStart_Click(object sender, RoutedEventArgs e)
-        {
-            Game.Start(diffgame);
-            bStart.Content = "ReStart";
-        }
-        
     }
 }

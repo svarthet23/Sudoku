@@ -13,8 +13,11 @@ namespace Sudoku
     public static class Game
     {
         private readonly static Random random = new Random();
-        private static int s;        
-        private static byte[] board = new byte[81];
+
+        private static int s;
+        
+        public static byte[] board = new byte[81];
+        private static byte[] solved = new byte[81];
 
         static MainWindow mw1 = Application.Current.Windows
     .Cast<Window>()
@@ -31,7 +34,7 @@ namespace Sudoku
             }            
         }
 
-        private static void BoardToTextBox()
+        public static void BoardToTextBox()
         {
             ushort i = 0;
             foreach (var tb in mw1.tbGrid.Children)
@@ -69,9 +72,22 @@ namespace Sudoku
                     else
                     {
                         ((TextBox)tb).Focusable = false;
-                        ((TextBox)tb).Foreground = Brushes.LightGray;
+                        ((TextBox)tb).Foreground = new SolidColorBrush(Color.FromRgb(60, 60, 60));
                     }
                     c++;
+                }
+            }
+        }
+
+        public static void SolvePuzzle()
+        {
+            ushort i = 0;
+            foreach (var tb in mw1.tbGrid.Children)
+            {
+                if (tb is TextBox)
+                {
+                    ((TextBox)tb).Text = solved[i].ToString();
+                    i++;
                 }
             }
         }
@@ -182,6 +198,17 @@ namespace Sudoku
                     Array.Copy(SudokuDatabase.sudoku22, board, 81);
                     break;
             }
+
+            Thread.Sleep(1);
+
+            s = random.Next(0, 2);
+            if (s == 1)
+            {
+                Array.Reverse(board);
+                Console.WriteLine("Reversed");
+            }
+               
+            Array.Copy(board, solved, 81);
 
             for (ushort i = 0; i < value; i++)
             {                

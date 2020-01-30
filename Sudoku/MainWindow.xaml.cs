@@ -1607,11 +1607,18 @@ namespace Sudoku
         {
             Game.Start(diffgame);
             bStart.Content = "ReStart";
-        }      
+        }  
+        
+        private void bSolve_Click(object sender, RoutedEventArgs e)
+        {
+            Game.SolvePuzzle();
+        }
+
         private void bGenerate_Click(object sender, RoutedEventArgs e)
         {
-            Generator.done = false;
-            Generator.Start(diffgene);
+            Generator.doneNew = false;
+            //Generator.Start(diffgene);
+            Generator.StartNew();
             bGenerate.Content = "ReGenerate";
         }
 
@@ -1636,5 +1643,6 @@ namespace Sudoku
                 diffgame = 80;  
             }
         }
+
     }
 }

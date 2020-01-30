@@ -123,7 +123,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Button x:Name="bStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14" Click="bStart_Click" />
-            <Button x:Name="bSolve" Content="Solve" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="1" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14" />
+            <Button x:Name="bSolve" Content="Solve" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="1" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="14" Click="bSolve_Click" />
             <Button x:Name="bGenerate" Content="Generate(alpha)" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="2" Background="{x:Null}" Foreground="#FFDEDEDE" BorderBrush="#FF646464" FontFamily="Verdana" FontSize="11" Click="bGenerate_Click"/>
             <Label x:Name="difficultyLabel" Content="Łatwy" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFDEDEDE"/>
             <Slider x:Name="difficultySlider" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Maximum="3" Width="100" SmallChange="1" IsSnapToTickEnabled="True" TickPlacement="TopLeft" ValueChanged="difficultySlider_ValueChanged" Minimum="1"/>

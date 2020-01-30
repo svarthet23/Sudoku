@@ -502,10 +502,11 @@ namespace Sudoku
                 BoardsArrays.allBoards[8] = false;
             }
         }   
-        private static void WinCheck()
+        public static void WinCheck()
         {
             if(BoardsArrays.allBoards[0] && BoardsArrays.allBoards[1] && BoardsArrays.allBoards[2] && BoardsArrays.allBoards[3] && BoardsArrays.allBoards[4] && BoardsArrays.allBoards[5] && BoardsArrays.allBoards[6] && BoardsArrays.allBoards[7] && BoardsArrays.allBoards[8] == true && RowsArrays.allRows[0] && RowsArrays.allRows[1] && RowsArrays.allRows[2] && RowsArrays.allRows[3] && RowsArrays.allRows[4] && RowsArrays.allRows[5] && RowsArrays.allRows[6] && RowsArrays.allRows[7] && RowsArrays.allRows[8] == true && ColumnsArrays.allColumns[0] && ColumnsArrays.allColumns[1] && ColumnsArrays.allColumns[2] && ColumnsArrays.allColumns[3] && ColumnsArrays.allColumns[4] && ColumnsArrays.allColumns[5] && ColumnsArrays.allColumns[6] && ColumnsArrays.allColumns[7] && ColumnsArrays.allColumns[8] == true)
             {
+                Generator.doneNew = true;
                 MessageBox.Show("Wygrałeś");
             }
         }

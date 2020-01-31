@@ -18,6 +18,7 @@ namespace Sudoku
         
         public static byte[] board = new byte[81];
         private static byte[] solved = new byte[81];
+        
 
         static MainWindow mw1 = Application.Current.Windows
     .Cast<Window>()
@@ -78,7 +79,7 @@ namespace Sudoku
                 }
             }
         }
-
+       
         public static void SolvePuzzle()
         {
             ushort i = 0;
@@ -123,7 +124,7 @@ namespace Sudoku
             ColumnsAlgorithm.column9();
         }
         
-        private static ushort i = 23;
+        private static ushort i = 61;
         public static void Start(ushort value)
         {
             DefaultColor();
@@ -197,8 +198,123 @@ namespace Sudoku
                 case 22:
                     Array.Copy(SudokuDatabase.sudoku22, board, 81);
                     break;
+                case 23:
+                    Array.Copy(SudokuDatabase.sudoku23, board, 81);
+                    break;
+                case 24:
+                    Array.Copy(SudokuDatabase.sudoku24, board, 81);
+                    break;
+                case 25:
+                    Array.Copy(SudokuDatabase.sudoku25, board, 81);
+                    break;
+                case 26:
+                    Array.Copy(SudokuDatabase.sudoku26, board, 81);
+                    break;
+                case 27:
+                    Array.Copy(SudokuDatabase.sudoku27, board, 81);
+                    break;
+                case 28:
+                    Array.Copy(SudokuDatabase.sudoku28, board, 81);
+                    break;
+                case 29:
+                    Array.Copy(SudokuDatabase.sudoku29, board, 81);
+                    break;
+                case 30:
+                    Array.Copy(SudokuDatabase.sudoku30, board, 81);
+                    break;
+                case 31:
+                    Array.Copy(SudokuDatabase.sudoku31, board, 81);
+                    break;
+                case 32:
+                    Array.Copy(SudokuDatabase.sudoku32, board, 81);
+                    break;
+                case 33:
+                    Array.Copy(SudokuDatabase.sudoku33, board, 81);
+                    break;
+                case 34:
+                    Array.Copy(SudokuDatabase.sudoku34, board, 81);
+                    break;
+                case 35:
+                    Array.Copy(SudokuDatabase.sudoku35, board, 81);
+                    break;
+                case 36:
+                    Array.Copy(SudokuDatabase.sudoku36, board, 81);
+                    break;
+                case 37:
+                    Array.Copy(SudokuDatabase.sudoku37, board, 81);
+                    break;
+                case 38:
+                    Array.Copy(SudokuDatabase.sudoku38, board, 81);
+                    break;
+                case 39:
+                    Array.Copy(SudokuDatabase.sudoku39, board, 81);
+                    break;
+                case 40:
+                    Array.Copy(SudokuDatabase.sudoku40, board, 81);
+                    break;
+                case 41:
+                    Array.Copy(SudokuDatabase.sudoku41, board, 81);
+                    break;
+                case 42:
+                    Array.Copy(SudokuDatabase.sudoku42, board, 81);
+                    break;
+                case 43:
+                    Array.Copy(SudokuDatabase.sudoku43, board, 81);
+                    break;
+                case 44:
+                    Array.Copy(SudokuDatabase.sudoku44, board, 81);
+                    break;
+                case 45:
+                    Array.Copy(SudokuDatabase.sudoku45, board, 81);
+                    break;
+                case 46:
+                    Array.Copy(SudokuDatabase.sudoku46, board, 81);
+                    break;
+                case 47:
+                    Array.Copy(SudokuDatabase.sudoku47, board, 81);
+                    break;
+                case 48:
+                    Array.Copy(SudokuDatabase.sudoku48, board, 81);
+                    break;
+                case 49:
+                    Array.Copy(SudokuDatabase.sudoku49, board, 81);
+                    break;
+                case 50:
+                    Array.Copy(SudokuDatabase.sudoku50, board, 81);
+                    break;
+                case 51:
+                    Array.Copy(SudokuDatabase.sudoku51, board, 81);
+                    break;
+                case 52:
+                    Array.Copy(SudokuDatabase.sudoku52, board, 81);
+                    break;
+                case 53:
+                    Array.Copy(SudokuDatabase.sudoku53, board, 81);
+                    break;
+                case 54:
+                    Array.Copy(SudokuDatabase.sudoku54, board, 81);
+                    break;
+                case 55:
+                    Array.Copy(SudokuDatabase.sudoku55, board, 81);
+                    break;
+                case 56:
+                    Array.Copy(SudokuDatabase.sudoku56, board, 81);
+                    break;
+                case 57:
+                    Array.Copy(SudokuDatabase.sudoku57, board, 81);
+                    break;
+                case 58:
+                    Array.Copy(SudokuDatabase.sudoku58, board, 81);
+                    break;
+                case 59:
+                    Array.Copy(SudokuDatabase.sudoku59, board, 81);
+                    break;
+                case 60:
+                    Array.Copy(SudokuDatabase.sudoku60, board, 81);
+                    break;                    
             }
 
+            Console.WriteLine(s);
             Thread.Sleep(1);
 
             s = random.Next(0, 2);

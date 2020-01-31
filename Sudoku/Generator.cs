@@ -50,34 +50,8 @@ namespace Sudoku
             while (done == false)
             {
                 breaker = 0;
-                Array.Clear(BoardsArrays.board1, 0, 9);
-                Array.Clear(BoardsArrays.board2, 0, 9);
-                Array.Clear(BoardsArrays.board3, 0, 9);
-                Array.Clear(BoardsArrays.board4, 0, 9);
-                Array.Clear(BoardsArrays.board5, 0, 9);
-                Array.Clear(BoardsArrays.board6, 0, 9);
-                Array.Clear(BoardsArrays.board7, 0, 9);
-                Array.Clear(BoardsArrays.board8, 0, 9);
-                Array.Clear(BoardsArrays.board9, 0, 9);
-                Array.Clear(RowsArrays.row1, 0, 9);
-                Array.Clear(RowsArrays.row2, 0, 9);
-                Array.Clear(RowsArrays.row3, 0, 9);
-                Array.Clear(RowsArrays.row4, 0, 9);
-                Array.Clear(RowsArrays.row5, 0, 9);
-                Array.Clear(RowsArrays.row6, 0, 9);
-                Array.Clear(RowsArrays.row7, 0, 9);
-                Array.Clear(RowsArrays.row8, 0, 9);
-                Array.Clear(RowsArrays.row9, 0, 9);
-                Array.Clear(ColumnsArrays.column1, 0, 9);
-                Array.Clear(ColumnsArrays.column2, 0, 9);
-                Array.Clear(ColumnsArrays.column3, 0, 9);
-                Array.Clear(ColumnsArrays.column4, 0, 9);
-                Array.Clear(ColumnsArrays.column5, 0, 9);
-                Array.Clear(ColumnsArrays.column6, 0, 9);
-                Array.Clear(ColumnsArrays.column7, 0, 9);
-                Array.Clear(ColumnsArrays.column8, 0, 9);
-                Array.Clear(ColumnsArrays.column9, 0, 9);
-                Array.Clear(BoardsArrays.allBoards, 0, 9);
+
+                ClearArrays();
 
                 i = rn1.Next(1, _value);
                 if (_i == 0)
@@ -2420,6 +2394,38 @@ namespace Sudoku
             }
         }
 
+        private static void ClearArrays()
+        {            
+            Array.Clear(BoardsArrays.board1, 0, 9);
+            Array.Clear(BoardsArrays.board2, 0, 9);
+            Array.Clear(BoardsArrays.board3, 0, 9);
+            Array.Clear(BoardsArrays.board4, 0, 9);
+            Array.Clear(BoardsArrays.board5, 0, 9);
+            Array.Clear(BoardsArrays.board6, 0, 9);
+            Array.Clear(BoardsArrays.board7, 0, 9);
+            Array.Clear(BoardsArrays.board8, 0, 9);
+            Array.Clear(BoardsArrays.board9, 0, 9);
+            Array.Clear(RowsArrays.row1, 0, 9);
+            Array.Clear(RowsArrays.row2, 0, 9);
+            Array.Clear(RowsArrays.row3, 0, 9);
+            Array.Clear(RowsArrays.row4, 0, 9);
+            Array.Clear(RowsArrays.row5, 0, 9);
+            Array.Clear(RowsArrays.row6, 0, 9);
+            Array.Clear(RowsArrays.row7, 0, 9);
+            Array.Clear(RowsArrays.row8, 0, 9);
+            Array.Clear(RowsArrays.row9, 0, 9);
+            Array.Clear(ColumnsArrays.column1, 0, 9);
+            Array.Clear(ColumnsArrays.column2, 0, 9);
+            Array.Clear(ColumnsArrays.column3, 0, 9);
+            Array.Clear(ColumnsArrays.column4, 0, 9);
+            Array.Clear(ColumnsArrays.column5, 0, 9);
+            Array.Clear(ColumnsArrays.column6, 0, 9);
+            Array.Clear(ColumnsArrays.column7, 0, 9);
+            Array.Clear(ColumnsArrays.column8, 0, 9);
+            Array.Clear(ColumnsArrays.column9, 0, 9);
+            Array.Clear(BoardsArrays.allBoards, 0, 9);
+        }
+
         static ushort stop = 0;
 
         private static void BackTrack(int old1, int old2, int old3, int old4, int old5, int old6)
@@ -3903,15 +3909,13 @@ namespace Sudoku
                     mw1.tb81.Clear();
                     break;
             }
-       
-            doneArray[old1 - 1] = false;
-            doneArray[old2 - 1] = false;
-            doneArray[old3 - 1] = false;
-            doneArray[old4 - 1] = false;
-            doneArray[old5 - 1] = false;
-            doneArray[old6 - 1] = false;
-            if (stop == 1000)
-                doneNew = true;
+            Array.Clear(doneArray, 0, doneArray.Length);
+
+            if (stop == 80)
+            {
+                ClearArrays();                
+                stop = 0;
+            }
 
             Game.ReEnter();
 
@@ -3927,8 +3931,6 @@ namespace Sudoku
         private static int old6 = 0;
         private static int swi = 0;
         private static bool[] doneArray = new bool[81];
-            
-
 
         private static void SetOldValues()
         {
@@ -3943,36 +3945,8 @@ namespace Sudoku
         public static void StartNew()
         {
             stop = 0;
-            Array.Clear(BoardsArrays.board1, 0, 9);
-            Array.Clear(BoardsArrays.board2, 0, 9);
-            Array.Clear(BoardsArrays.board3, 0, 9);
-            Array.Clear(BoardsArrays.board4, 0, 9);
-            Array.Clear(BoardsArrays.board5, 0, 9);
-            Array.Clear(BoardsArrays.board6, 0, 9);
-            Array.Clear(BoardsArrays.board7, 0, 9);
-            Array.Clear(BoardsArrays.board8, 0, 9);
-            Array.Clear(BoardsArrays.board9, 0, 9);
-            Array.Clear(RowsArrays.row1, 0, 9);
-            Array.Clear(RowsArrays.row2, 0, 9);
-            Array.Clear(RowsArrays.row3, 0, 9);
-            Array.Clear(RowsArrays.row4, 0, 9);
-            Array.Clear(RowsArrays.row5, 0, 9);
-            Array.Clear(RowsArrays.row6, 0, 9);
-            Array.Clear(RowsArrays.row7, 0, 9);
-            Array.Clear(RowsArrays.row8, 0, 9);
-            Array.Clear(RowsArrays.row9, 0, 9);
-            Array.Clear(ColumnsArrays.column1, 0, 9);
-            Array.Clear(ColumnsArrays.column2, 0, 9);
-            Array.Clear(ColumnsArrays.column3, 0, 9);
-            Array.Clear(ColumnsArrays.column4, 0, 9);
-            Array.Clear(ColumnsArrays.column5, 0, 9);
-            Array.Clear(ColumnsArrays.column6, 0, 9);
-            Array.Clear(ColumnsArrays.column7, 0, 9);
-            Array.Clear(ColumnsArrays.column8, 0, 9);
-            Array.Clear(ColumnsArrays.column9, 0, 9);
-            Array.Clear(BoardsArrays.allBoards, 0, 9);
-            Array.Clear(RowsArrays.allRows, 0, 9);
-            Array.Clear(ColumnsArrays.allColumns, 0, 9);
+
+            ClearArrays();
 
             while (doneNew == false)
             {               
@@ -5439,15 +5413,13 @@ namespace Sudoku
                         }
                         break;
                 }
-
-                Thread.Sleep(1);
                 laps++;
+                //Thread.Sleep(1);
                 Console.WriteLine(laps);
                
                 BoardsAlgorithm.WinCheck();
                 RowsAlgorithm.WinCheck();
                 ColumnsAlgorithm.WinCheck();
-
             }
             NotFocusGreyColor();
         }

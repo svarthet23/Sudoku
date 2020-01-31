@@ -19,14 +19,18 @@ namespace Sudoku
             InitializeComponent();
             Thread welcomethread = new Thread(WelcomeCloseTimer);
             welcomethread.Start();
-        }
+        }        
         private void WelcomeCloseTimer()
         {
-            Thread.Sleep(2500);
-            Dispatcher.Invoke(() =>
+            Thread.Sleep(3000);
+            if (MainWindow.shutdown == false)
             {
-                SystemCommands.CloseWindow(this);
-            });          
+                Dispatcher.Invoke(() =>
+                {
+                    SystemCommands.CloseWindow(this);
+                });
+            }
+                      
         }
         public void WelcomeClose()
         {

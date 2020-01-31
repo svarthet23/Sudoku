@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sudoku"
         mc:Ignorable="d"
-        Title="Sudoku" Height="800" Width="900" Background="#FF787878" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="img\IconWindow.png" >
-    <Grid x:Name="tbGrid" Margin="0,0,122,0">
+        Title="Sudoku" Height="816" Width="900" Background="#FF787878" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="img\IconWindow.png" WindowStyle="None" >
+
+    <Grid x:Name="tbGrid" Margin="0,0,120,4" Height="772" Width="772" VerticalAlignment="Bottom">
         <Grid.Background>
             <ImageBrush ImageSource="img\Background.png"/>
         </Grid.Background>
@@ -32,15 +33,15 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-         <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb1_PreviewKeyDown' TextChanged='tb1_TextChanged' GotFocus = 'tb1_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb1' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb1_PreviewKeyDown' TextChanged='tb1_TextChanged' GotFocus = 'tb1_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb2' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb2_PreviewKeyDown' TextChanged='tb2_TextChanged' GotFocus = 'tb2_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb3' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb3_PreviewKeyDown' TextChanged='tb3_TextChanged' GotFocus = 'tb3_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb4' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb4_PreviewKeyDown' TextChanged='tb4_TextChanged' GotFocus = 'tb4_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="3" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb5' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb5_PreviewKeyDown' TextChanged='tb5_TextChanged' GotFocus = 'tb5_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="4" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb6' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb6_PreviewKeyDown' TextChanged='tb6_TextChanged' GotFocus = 'tb6_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="5" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb7' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb7_PreviewKeyDown' TextChanged='tb7_TextChanged' GotFocus = 'tb7_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="6" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb8' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb8_PreviewKeyDown' TextChanged='tb8_TextChanged' GotFocus = 'tb8_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="7" Width="82" Height="82" Cursor="Arrow"/>
-         <TextBox x:Name='tb9' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb9_PreviewKeyDown' TextChanged='tb9_TextChanged' GotFocus = 'tb9_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="8" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb3' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb3_PreviewKeyDown' TextChanged='tb3_TextChanged' GotFocus = 'tb3_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb4' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb4_PreviewKeyDown' TextChanged='tb4_TextChanged' GotFocus = 'tb4_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="3" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb5' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb5_PreviewKeyDown' TextChanged='tb5_TextChanged' GotFocus = 'tb5_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="4" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb6' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb6_PreviewKeyDown' TextChanged='tb6_TextChanged' GotFocus = 'tb6_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="5" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb7' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb7_PreviewKeyDown' TextChanged='tb7_TextChanged' GotFocus = 'tb7_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="6" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb8' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb8_PreviewKeyDown' TextChanged='tb8_TextChanged' GotFocus = 'tb8_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="7" Width="82" Height="82" Cursor="Arrow"/>
+        <TextBox x:Name='tb9' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb9_PreviewKeyDown' TextChanged='tb9_TextChanged' GotFocus = 'tb9_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="8" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb10' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb10_PreviewKeyDown' TextChanged='tb10_TextChanged' GotFocus = 'tb10_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb11' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb11_PreviewKeyDown' TextChanged='tb11_TextChanged' GotFocus = 'tb11_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="1" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
         <TextBox x:Name='tb12' HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Gray" BorderBrush="Black" MaxLength="1" MaxLines="1" FontFamily="Verdana" FontSize="48" PreviewKeyDown='tb12_PreviewKeyDown' TextChanged='tb12_TextChanged' GotFocus = 'tb12_GotFocus' MouseMove = 'tb_MouseMove' MouseLeave = 'tb_MouseLeave' SelectionBrush="{x:Null}" Grid.Column="2" Grid.Row="1" Width="82" Height="82" Cursor="Arrow"/>
@@ -128,7 +129,37 @@
             <Label x:Name="difficultyLabel" Content="Łatwy" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14" Foreground="#FFDEDEDE"/>
             <Slider x:Name="difficultySlider" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Maximum="3" Width="100" SmallChange="1" IsSnapToTickEnabled="True" TickPlacement="TopLeft" ValueChanged="difficultySlider_ValueChanged" Minimum="1"/>
         </Grid>
-
+        <Button x:Name="bExit" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="14" Margin="169,-39,-123,85" Grid.Column="8" Click="bExit_Click" >
+            <Button.Foreground>
+                <ImageBrush ImageSource="img/Exit.png" Stretch="Uniform"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="img/Exit.png" Stretch="Uniform">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.2" ScaleY="1.2"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bMinimize" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Foreground="{x:Null}" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="14" Click="bMinimize_Click" Margin="129,-39,-83,85" Grid.Column="8" >
+            <Button.Background>
+                <ImageBrush ImageSource="img/Minimize.png" Stretch="Uniform">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.2" ScaleY="1.2"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+        </Button>
         <Grid Grid.Column="8" HorizontalAlignment="Left" Height="102" Margin="96,60,-112,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="102" Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -222,87 +253,9 @@
             <Image x:Name='imrw8' Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
             <Image x:Name='imrw9' Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Source="img\WrongRow.png"/>
         </Grid>
+        <Grid Grid.ColumnSpan="9" HorizontalAlignment="Left" Height="38" Margin="-4,-40,-42.444,0" VerticalAlignment="Top" Width="820">
+<Label Content="SUDOKU#" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="820" Height="38" FontFamily="Verdana" Foreground="#FFDEDEDE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontStyle="Italic" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+        </Grid>
+
     </Grid>
 </Window>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

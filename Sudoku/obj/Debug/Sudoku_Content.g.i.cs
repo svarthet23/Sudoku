@@ -8,9 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/goodcolumn.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/goodrow.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/wrongcolumn.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/wrongrow.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/exit.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/minimize.png")]
 
 

@@ -9,12 +9,12 @@
     <Window.Background>
         <RadialGradientBrush>
             <GradientStop Color="Black"/>
-            <GradientStop Color="#FF8C8C8C" Offset="1"/>
+            <GradientStop Color="#FF787878" Offset="1"/>
             <GradientStop Color="#FE000000"/>
         </RadialGradientBrush>
     </Window.Background>
     <Grid>
-        <Label Content="SUDOKU#" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Unispace" Foreground="White" FontStyle="Italic"/>
+        <Label Content="SUDOKU#" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Unispace" Foreground="White" FontStyle="Italic" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Oskar Podgórski" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Unispace"/>
         <Label Content="Tomasz Gaj" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontFamily="Unispace"/>
 

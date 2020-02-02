@@ -2424,6 +2424,8 @@ namespace Sudoku
             Array.Clear(ColumnsArrays.column8, 0, 9);
             Array.Clear(ColumnsArrays.column9, 0, 9);
             Array.Clear(BoardsArrays.allBoards, 0, 9);
+            Array.Clear(RowsArrays.allRows, 0, 9);
+            Array.Clear(ColumnsArrays.allColumns, 0, 9);
         }
 
         static ushort stop = 0;

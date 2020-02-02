@@ -17,6 +17,8 @@ namespace Sudoku
         private static int s;
         
         public static byte[] board = new byte[81];
+        private static byte[] board90 = new byte[81];
+        private static byte[] board270 = new byte[81];
         private static byte[] solved = new byte[81];
         
 
@@ -317,13 +319,190 @@ namespace Sudoku
             Console.WriteLine(s);
             Thread.Sleep(1);
 
-            s = random.Next(0, 2);
-            if (s == 1)
+            s = random.Next(0, 4);
+
+            if (s == 0)
+            {
+                Console.WriteLine("Normal");
+            }               
+            else if (s == 1)
             {
                 Array.Reverse(board);
-                Console.WriteLine("Reversed");
+                Console.WriteLine("Rotated 180");
             }
-               
+            else if (s == 2)
+            {
+                board90[8] = board[0];
+                board90[17] = board[1];
+                board90[26] = board[2];
+                board90[35] = board[3];
+                board90[44] = board[4];
+                board90[53] = board[5];
+                board90[62] = board[6];
+                board90[71] = board[7];
+                board90[80] = board[8];
+                board90[7] = board[9];
+                board90[16] = board[10];
+                board90[25] = board[11];
+                board90[34] = board[12];
+                board90[43] = board[13];
+                board90[52] = board[14];
+                board90[61] = board[15];
+                board90[70] = board[16];
+                board90[79] = board[17];
+                board90[6] = board[18];
+                board90[15] = board[19];
+                board90[24] = board[20];
+                board90[33] = board[21];
+                board90[42] = board[22];
+                board90[51] = board[23];
+                board90[60] = board[24];
+                board90[69] = board[25];
+                board90[78] = board[26];
+                board90[5] = board[27];
+                board90[14] = board[28];
+                board90[23] = board[29];
+                board90[32] = board[30];
+                board90[41] = board[31];
+                board90[50] = board[32];
+                board90[59] = board[33];
+                board90[68] = board[34];
+                board90[77] = board[35];
+                board90[4] = board[36];
+                board90[13] = board[37];
+                board90[22] = board[38];
+                board90[31] = board[39];
+                board90[40] = board[40];
+                board90[49] = board[41];
+                board90[58] = board[42];
+                board90[67] = board[43];
+                board90[76] = board[44];
+                board90[3] = board[45];
+                board90[12] = board[46];
+                board90[21] = board[47];
+                board90[30] = board[48];
+                board90[39] = board[49];
+                board90[48] = board[50];
+                board90[57] = board[51];
+                board90[66] = board[52];
+                board90[75] = board[53];
+                board90[2] = board[54];
+                board90[11] = board[55];
+                board90[20] = board[56];
+                board90[29] = board[57];
+                board90[38] = board[58];
+                board90[47] = board[59];
+                board90[56] = board[60];
+                board90[65] = board[61];
+                board90[74] = board[62];
+                board90[1] = board[63];
+                board90[10] = board[64];
+                board90[19] = board[65];
+                board90[28] = board[66];
+                board90[37] = board[67];
+                board90[46] = board[68];
+                board90[55] = board[69];
+                board90[64] = board[70];
+                board90[73] = board[71];
+                board90[0] = board[72];
+                board90[9] = board[73];
+                board90[18] = board[74];
+                board90[27] = board[75];
+                board90[36] = board[76];
+                board90[45] = board[77];
+                board90[54] = board[78];
+                board90[63] = board[79];
+                board90[72] = board[80];
+                Array.Copy(board90, 0, board, 0, 81);
+                Console.WriteLine("Rotated90");
+            }
+            else if (s == 3)
+            {
+                board270[72] = board[0];
+                board270[63] = board[1];
+                board270[54] = board[2];
+                board270[45] = board[3];
+                board270[36] = board[4];
+                board270[27] = board[5];
+                board270[18] = board[6];
+                board270[9] = board[7];
+                board270[0] = board[8];
+                board270[73] = board[9];
+                board270[64] = board[10];
+                board270[55] = board[11];
+                board270[46] = board[12];
+                board270[37] = board[13];
+                board270[28] = board[14];
+                board270[19] = board[15];
+                board270[10] = board[16];
+                board270[1] = board[17];
+                board270[74] = board[18];
+                board270[65] = board[19];
+                board270[56] = board[20];
+                board270[47] = board[21];
+                board270[38] = board[22];
+                board270[29] = board[23];
+                board270[20] = board[24];
+                board270[11] = board[25];
+                board270[2] = board[26];
+                board270[75] = board[27];
+                board270[66] = board[28];
+                board270[57] = board[29];
+                board270[48] = board[30];
+                board270[39] = board[31];
+                board270[30] = board[32];
+                board270[21] = board[33];
+                board270[12] = board[34];
+                board270[3] = board[35];
+                board270[76] = board[36];
+                board270[67] = board[37];
+                board270[58] = board[38];
+                board270[49] = board[39];
+                board270[40] = board[40];
+                board270[31] = board[41];
+                board270[22] = board[42];
+                board270[13] = board[43];
+                board270[4] = board[44];
+                board270[77] = board[45];
+                board270[68] = board[46];
+                board270[59] = board[47];
+                board270[50] = board[48];
+                board270[41] = board[49];
+                board270[32] = board[50];
+                board270[23] = board[51];
+                board270[14] = board[52];
+                board270[5] = board[53];
+                board270[78] = board[54];
+                board270[69] = board[55];
+                board270[60] = board[56];
+                board270[51] = board[57];
+                board270[42] = board[58];
+                board270[33] = board[59];
+                board270[24] = board[60];
+                board270[15] = board[61];
+                board270[6] = board[62];
+                board270[79] = board[63];
+                board270[70] = board[64];
+                board270[61] = board[65];
+                board270[52] = board[66];
+                board270[43] = board[67];
+                board270[34] = board[68];
+                board270[25] = board[69];
+                board270[16] = board[70];
+                board270[7] = board[71];
+                board270[80] = board[72];
+                board270[71] = board[73];
+                board270[62] = board[74];
+                board270[53] = board[75];
+                board270[44] = board[76];
+                board270[35] = board[77];
+                board270[26] = board[78];
+                board270[17] = board[79];
+                board270[8] = board[80];
+                Array.Copy(board270, 0, board, 0, 81);
+                Console.WriteLine("Rotated270");
+            }
+
             Array.Copy(board, solved, 81);
 
             for (ushort i = 0; i < value; i++)
